@@ -19,7 +19,7 @@ public class GroupTest {
                 System.out.println(String.format("文件不存在:%s", new File(path, "input.txt")));
                 System.exit(1);
             }
-            new GroupProxy().group_txt();
+            grouper.group_txt();
         }else if (args.length==1){
             GroupResult result=grouper.group_record(args[0]);
             System.out.println(result);
