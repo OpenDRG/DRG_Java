@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="suzhou_2022" default="jar" basedir=".">
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+    <target name="compile" depends="clean">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="." destdir="build/classes" includeAntRuntime="false"/>
+    </target>
+    <target name="run" depends="compile">
+        <java classname="drg_group.suzhou_2022.GroupTest">
+            <classpath>
+                <pathelement path="build/classes"/>
+            </classpath>
+        </java>
+    </target>
+    <target name="jar" depends="compile">
+        <mkdir dir="build/jar"/>
+        <jar destfile="./build/jar/grouper_suzhou_2022.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-class" value="drg_group.suzhou_2022.GroupTest"/>
+            </manifest>
+            <zipfileset dir="ICD" prefix="drg_group/suzhou_2022/ICD"/>
+            <zipfileset dir="DATA" prefix="drg_group/suzhou_2022/DATA"/>
+        </jar>
+    </target>
+</project>
