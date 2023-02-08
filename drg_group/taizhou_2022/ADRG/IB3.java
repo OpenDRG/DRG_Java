@@ -18,16 +18,8 @@ public class IB3 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IB3入组条件，匹配规则：主手术匹配");
                 
-            if (MDCI_DRG.IB31_group(record)){
-                return "IB31";
-            }
-    
-            if (MDCI_DRG.IB33_group(record)){
-                return "IB33";
-            }
-    
-            if (MDCI_DRG.IB35_group(record)){
-                return "IB35";
+            if (MDCI_DRG.IB39_group(record)){
+                return "IB39";
             }
 
             return "IB3";

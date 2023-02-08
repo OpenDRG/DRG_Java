@@ -18,16 +18,8 @@ public class FK3 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FK3入组条件，匹配规则：主手术匹配");
                 
-            if (MDCF_DRG.FK31_group(record)){
-                return "FK31";
-            }
-    
-            if (MDCF_DRG.FK33_group(record)){
-                return "FK33";
-            }
-    
-            if (MDCF_DRG.FK35_group(record)){
-                return "FK35";
+            if (MDCF_DRG.FK39_group(record)){
+                return "FK39";
             }
 
             return "FK3";

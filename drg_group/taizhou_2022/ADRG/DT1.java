@@ -18,10 +18,6 @@ public class DT1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合DT1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCD_DRG.DT10_group(record)){
-                return "DT10";
-            }
-    
             if (MDCD_DRG.DT11_group(record)){
                 return "DT11";
             }

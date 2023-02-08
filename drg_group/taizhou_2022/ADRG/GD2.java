@@ -18,16 +18,8 @@ public class GD2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GD2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCG_DRG.GD21_group(record)){
-                return "GD21";
-            }
-    
-            if (MDCG_DRG.GD23_group(record)){
-                return "GD23";
-            }
-    
-            if (MDCG_DRG.GD25_group(record)){
-                return "GD25";
+            if (MDCG_DRG.GD29_group(record)){
+                return "GD29";
             }
 
             return "GD2";

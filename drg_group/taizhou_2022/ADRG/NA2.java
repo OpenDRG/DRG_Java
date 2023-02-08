@@ -18,16 +18,8 @@ public class NA2 {
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合NA2入组条件，匹配规则：主诊断匹配、主手术匹配");
                 
-            if (MDCN_DRG.NA21_group(record)){
-                return "NA21";
-            }
-    
-            if (MDCN_DRG.NA23_group(record)){
-                return "NA23";
-            }
-    
-            if (MDCN_DRG.NA25_group(record)){
-                return "NA25";
+            if (MDCN_DRG.NA29_group(record)){
+                return "NA29";
             }
 
             return "NA2";

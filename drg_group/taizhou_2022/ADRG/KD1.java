@@ -18,16 +18,8 @@ public class KD1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合KD1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCK_DRG.KD11_group(record)){
-                return "KD11";
-            }
-    
-            if (MDCK_DRG.KD13_group(record)){
-                return "KD13";
-            }
-    
-            if (MDCK_DRG.KD15_group(record)){
-                return "KD15";
+            if (MDCK_DRG.KD19_group(record)){
+                return "KD19";
             }
 
             return "KD1";

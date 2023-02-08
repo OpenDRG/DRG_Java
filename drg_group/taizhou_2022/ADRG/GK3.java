@@ -18,16 +18,8 @@ public class GK3 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GK3入组条件，匹配规则：主手术匹配");
                 
-            if (MDCG_DRG.GK31_group(record)){
-                return "GK31";
-            }
-    
-            if (MDCG_DRG.GK33_group(record)){
-                return "GK33";
-            }
-    
-            if (MDCG_DRG.GK35_group(record)){
-                return "GK35";
+            if (MDCG_DRG.GK39_group(record)){
+                return "GK39";
             }
 
             return "GK3";

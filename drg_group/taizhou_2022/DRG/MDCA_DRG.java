@@ -7,19 +7,7 @@ import drg_group.taizhou_2022.MedicalRecord;
 
 public class MDCA_DRG {
 
-    public static boolean AF19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean AG29_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean AC19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean AG19_group(MedicalRecord record){
+    public static boolean AD19_group(MedicalRecord record){
         return true;
     }
 
@@ -35,11 +23,31 @@ public class MDCA_DRG {
         return true;
     }
 
-    public static boolean AD19_group(MedicalRecord record){
+    public static boolean AG19_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean AH19_group(MedicalRecord record){
+    public static boolean AF19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean AG29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean AC19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean AH11_group(MedicalRecord record){
+        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    }
+
+    public static boolean AH13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean AH15_group(MedicalRecord record){
         return true;
     }
 

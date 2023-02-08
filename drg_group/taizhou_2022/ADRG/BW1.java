@@ -18,8 +18,16 @@ public class BW1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BW1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCB_DRG.BW19_group(record)){
-                return "BW19";
+            if (MDCB_DRG.BW11_group(record)){
+                return "BW11";
+            }
+    
+            if (MDCB_DRG.BW13_group(record)){
+                return "BW13";
+            }
+    
+            if (MDCB_DRG.BW15_group(record)){
+                return "BW15";
             }
 
             return "BW1";

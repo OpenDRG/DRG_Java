@@ -18,16 +18,8 @@ public class IF3 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IF3入组条件，匹配规则：主手术匹配");
                 
-            if (MDCI_DRG.IF31_group(record)){
-                return "IF31";
-            }
-    
-            if (MDCI_DRG.IF33_group(record)){
-                return "IF33";
-            }
-    
-            if (MDCI_DRG.IF35_group(record)){
-                return "IF35";
+            if (MDCI_DRG.IF39_group(record)){
+                return "IF39";
             }
 
             return "IF3";

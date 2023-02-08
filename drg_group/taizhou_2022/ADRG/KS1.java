@@ -18,16 +18,8 @@ public class KS1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合KS1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCK_DRG.KS11_group(record)){
-                return "KS11";
-            }
-    
-            if (MDCK_DRG.KS13_group(record)){
-                return "KS13";
-            }
-    
-            if (MDCK_DRG.KS15_group(record)){
-                return "KS15";
+            if (MDCK_DRG.KS19_group(record)){
+                return "KS19";
             }
 
             return "KS1";

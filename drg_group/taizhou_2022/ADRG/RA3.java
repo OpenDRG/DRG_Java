@@ -18,16 +18,8 @@ public class RA3 {
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合RA3入组条件，匹配规则：主诊断匹配、主手术匹配");
                 
-            if (MDCR_DRG.RA31_group(record)){
-                return "RA31";
-            }
-    
-            if (MDCR_DRG.RA33_group(record)){
-                return "RA33";
-            }
-    
-            if (MDCR_DRG.RA35_group(record)){
-                return "RA35";
+            if (MDCR_DRG.RA39_group(record)){
+                return "RA39";
             }
 
             return "RA3";

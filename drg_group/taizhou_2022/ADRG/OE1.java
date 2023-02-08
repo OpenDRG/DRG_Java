@@ -18,16 +18,8 @@ public class OE1 {
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合OE1入组条件，匹配规则：主诊断匹配、主手术匹配");
                 
-            if (MDCO_DRG.OE11_group(record)){
-                return "OE11";
-            }
-    
-            if (MDCO_DRG.OE13_group(record)){
-                return "OE13";
-            }
-    
-            if (MDCO_DRG.OE15_group(record)){
-                return "OE15";
+            if (MDCO_DRG.OE19_group(record)){
+                return "OE19";
             }
 
             return "OE1";

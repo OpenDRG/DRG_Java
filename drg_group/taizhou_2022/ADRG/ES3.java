@@ -17,7 +17,19 @@ public class ES3 {
         
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合ES3入组条件，匹配规则：主诊断匹配");
-            
+                
+            if (MDCE_DRG.ES31_group(record)){
+                return "ES31";
+            }
+    
+            if (MDCE_DRG.ES33_group(record)){
+                return "ES33";
+            }
+    
+            if (MDCE_DRG.ES35_group(record)){
+                return "ES35";
+            }
+
             return "ES3";
         }else{
             return "";

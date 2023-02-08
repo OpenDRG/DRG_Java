@@ -18,16 +18,8 @@ public class JV1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合JV1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCJ_DRG.JV11_group(record)){
-                return "JV11";
-            }
-    
-            if (MDCJ_DRG.JV13_group(record)){
-                return "JV13";
-            }
-    
-            if (MDCJ_DRG.JV15_group(record)){
-                return "JV15";
+            if (MDCJ_DRG.JV19_group(record)){
+                return "JV19";
             }
 
             return "JV1";

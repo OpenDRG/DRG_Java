@@ -18,16 +18,8 @@ public class CB3 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合CB3入组条件，匹配规则：主手术匹配");
                 
-            if (MDCC_DRG.CB31_group(record)){
-                return "CB31";
-            }
-    
-            if (MDCC_DRG.CB33_group(record)){
-                return "CB33";
-            }
-    
-            if (MDCC_DRG.CB35_group(record)){
-                return "CB35";
+            if (MDCC_DRG.CB39_group(record)){
+                return "CB39";
             }
 
             return "CB3";

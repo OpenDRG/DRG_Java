@@ -17,7 +17,19 @@ public class EB2 {
         
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合EB2入组条件，匹配规则：主手术匹配");
-            
+                
+            if (MDCE_DRG.EB21_group(record)){
+                return "EB21";
+            }
+    
+            if (MDCE_DRG.EB23_group(record)){
+                return "EB23";
+            }
+    
+            if (MDCE_DRG.EB25_group(record)){
+                return "EB25";
+            }
+
             return "EB2";
         }else{
             return "";

@@ -18,16 +18,8 @@ public class GT1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GT1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCG_DRG.GT11_group(record)){
-                return "GT11";
-            }
-    
-            if (MDCG_DRG.GT13_group(record)){
-                return "GT13";
-            }
-    
-            if (MDCG_DRG.GT15_group(record)){
-                return "GT15";
+            if (MDCG_DRG.GT19_group(record)){
+                return "GT19";
             }
 
             return "GT1";

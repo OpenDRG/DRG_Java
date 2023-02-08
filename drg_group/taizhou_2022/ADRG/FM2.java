@@ -18,16 +18,8 @@ public class FM2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FM2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCF_DRG.FM21_group(record)){
-                return "FM21";
-            }
-    
-            if (MDCF_DRG.FM23_group(record)){
-                return "FM23";
-            }
-    
-            if (MDCF_DRG.FM25_group(record)){
-                return "FM25";
+            if (MDCF_DRG.FM29_group(record)){
+                return "FM29";
             }
 
             return "FM2";

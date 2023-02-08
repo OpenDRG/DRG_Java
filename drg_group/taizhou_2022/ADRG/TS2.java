@@ -18,16 +18,8 @@ public class TS2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合TS2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCT_DRG.TS21_group(record)){
-                return "TS21";
-            }
-    
-            if (MDCT_DRG.TS23_group(record)){
-                return "TS23";
-            }
-    
-            if (MDCT_DRG.TS25_group(record)){
-                return "TS25";
+            if (MDCT_DRG.TS29_group(record)){
+                return "TS29";
             }
 
             return "TS2";

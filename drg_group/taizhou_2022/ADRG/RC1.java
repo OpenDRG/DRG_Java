@@ -18,16 +18,8 @@ public class RC1 {
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合RC1入组条件，匹配规则：主诊断匹配、主手术匹配");
                 
-            if (MDCR_DRG.RC11_group(record)){
-                return "RC11";
-            }
-    
-            if (MDCR_DRG.RC13_group(record)){
-                return "RC13";
-            }
-    
-            if (MDCR_DRG.RC15_group(record)){
-                return "RC15";
+            if (MDCR_DRG.RC19_group(record)){
+                return "RC19";
             }
 
             return "RC1";

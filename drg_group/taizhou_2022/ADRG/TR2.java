@@ -18,16 +18,8 @@ public class TR2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合TR2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCT_DRG.TR21_group(record)){
-                return "TR21";
-            }
-    
-            if (MDCT_DRG.TR23_group(record)){
-                return "TR23";
-            }
-    
-            if (MDCT_DRG.TR25_group(record)){
-                return "TR25";
+            if (MDCT_DRG.TR29_group(record)){
+                return "TR29";
             }
 
             return "TR2";

@@ -18,16 +18,8 @@ public class DC2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合DC2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCD_DRG.DC21_group(record)){
-                return "DC21";
-            }
-    
-            if (MDCD_DRG.DC23_group(record)){
-                return "DC23";
-            }
-    
-            if (MDCD_DRG.DC25_group(record)){
-                return "DC25";
+            if (MDCD_DRG.DC29_group(record)){
+                return "DC29";
             }
 
             return "DC2";

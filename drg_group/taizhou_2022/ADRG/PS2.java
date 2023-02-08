@@ -17,7 +17,19 @@ public class PS2 {
         
         if (true && Base.intersect(record.zdList,adrg_zd) && record.weight>0 && record.weight>=1500 && record.weight<2000 && record.ageDay<=28){
             Base.groupMessages.putMessage(record.Index,"符合PS2入组条件，匹配规则：某一诊断匹配、体重1500至2000克、新生儿");
-            
+                
+            if (MDCP_DRG.PS21_group(record)){
+                return "PS21";
+            }
+    
+            if (MDCP_DRG.PS23_group(record)){
+                return "PS23";
+            }
+    
+            if (MDCP_DRG.PS25_group(record)){
+                return "PS25";
+            }
+
             return "PS2";
         }else{
             return "";

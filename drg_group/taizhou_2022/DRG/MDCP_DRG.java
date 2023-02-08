@@ -7,7 +7,7 @@ import drg_group.taizhou_2022.MedicalRecord;
 
 public class MDCP_DRG {
 
-    public static boolean PR19_group(MedicalRecord record){
+    public static boolean PC19_group(MedicalRecord record){
         return true;
     }
 
@@ -15,27 +15,19 @@ public class MDCP_DRG {
         return true;
     }
 
-    public static boolean PK19_group(MedicalRecord record){
+    public static boolean PB19_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean PC11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    public static boolean PS39_group(MedicalRecord record){
+        return true;
     }
 
-    public static boolean PB11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    public static boolean PJ19_group(MedicalRecord record){
+        return true;
     }
 
-    public static boolean PJ11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean PT11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean PV11_group(MedicalRecord record){
+    public static boolean PK11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
@@ -43,27 +35,27 @@ public class MDCP_DRG {
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean PT21_group(MedicalRecord record){
+    public static boolean PV11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean PT13_group(MedicalRecord record){
+    public static boolean PR11_group(MedicalRecord record){
+        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    }
+
+    public static boolean PS41_group(MedicalRecord record){
+        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    }
+
+    public static boolean PS21_group(MedicalRecord record){
+        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    }
+
+    public static boolean PS43_group(MedicalRecord record){
         return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
-    public static boolean PJ13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean PT23_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean PB13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean PC13_group(MedicalRecord record){
+    public static boolean PS23_group(MedicalRecord record){
         return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
@@ -71,35 +63,39 @@ public class MDCP_DRG {
         return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
+    public static boolean PR13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean PK13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
     public static boolean PV13_group(MedicalRecord record){
         return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
-    public static boolean PT15_group(MedicalRecord record){
+    public static boolean PS45_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean PJ15_group(MedicalRecord record){
+    public static boolean PR15_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean PU15_group(MedicalRecord record){
+    public static boolean PS25_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean PT25_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean PC15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean PB15_group(MedicalRecord record){
+    public static boolean PK15_group(MedicalRecord record){
         return true;
     }
 
     public static boolean PV15_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean PU15_group(MedicalRecord record){
         return true;
     }
 

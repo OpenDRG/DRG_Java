@@ -18,20 +18,8 @@ public class JC1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合JC1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCJ_DRG.JC10_group(record)){
-                return "JC10";
-            }
-    
-            if (MDCJ_DRG.JC11_group(record)){
-                return "JC11";
-            }
-    
-            if (MDCJ_DRG.JC13_group(record)){
-                return "JC13";
-            }
-    
-            if (MDCJ_DRG.JC15_group(record)){
-                return "JC15";
+            if (MDCJ_DRG.JC19_group(record)){
+                return "JC19";
             }
 
             return "JC1";

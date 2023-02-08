@@ -17,7 +17,11 @@ public class FT4 {
         
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FT4入组条件，匹配规则：主诊断匹配");
-            
+                
+            if (MDCF_DRG.FT49_group(record)){
+                return "FT49";
+            }
+
             return "FT4";
         }else{
             return "";

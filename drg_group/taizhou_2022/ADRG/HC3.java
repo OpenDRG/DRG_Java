@@ -18,16 +18,8 @@ public class HC3 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HC3入组条件，匹配规则：主手术匹配");
                 
-            if (MDCH_DRG.HC31_group(record)){
-                return "HC31";
-            }
-    
-            if (MDCH_DRG.HC33_group(record)){
-                return "HC33";
-            }
-    
-            if (MDCH_DRG.HC35_group(record)){
-                return "HC35";
+            if (MDCH_DRG.HC39_group(record)){
+                return "HC39";
             }
 
             return "HC3";

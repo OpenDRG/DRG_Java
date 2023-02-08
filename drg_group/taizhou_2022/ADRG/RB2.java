@@ -17,7 +17,11 @@ public class RB2 {
         
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合RB2入组条件，匹配规则：主诊断匹配、主手术匹配");
-            
+                
+            if (MDCR_DRG.RB29_group(record)){
+                return "RB29";
+            }
+
             return "RB2";
         }else{
             return "";

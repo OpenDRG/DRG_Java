@@ -18,8 +18,16 @@ public class TW1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合TW1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCT_DRG.TW19_group(record)){
-                return "TW19";
+            if (MDCT_DRG.TW11_group(record)){
+                return "TW11";
+            }
+    
+            if (MDCT_DRG.TW13_group(record)){
+                return "TW13";
+            }
+    
+            if (MDCT_DRG.TW15_group(record)){
+                return "TW15";
             }
 
             return "TW1";

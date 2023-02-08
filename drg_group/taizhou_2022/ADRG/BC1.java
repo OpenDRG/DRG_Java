@@ -18,16 +18,8 @@ public class BC1 {
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BC1入组条件，匹配规则：主诊断匹配、主手术匹配");
                 
-            if (MDCB_DRG.BC11_group(record)){
-                return "BC11";
-            }
-    
-            if (MDCB_DRG.BC13_group(record)){
-                return "BC13";
-            }
-    
-            if (MDCB_DRG.BC15_group(record)){
-                return "BC15";
+            if (MDCB_DRG.BC19_group(record)){
+                return "BC19";
             }
 
             return "BC1";

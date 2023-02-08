@@ -18,16 +18,8 @@ public class CB4 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合CB4入组条件，匹配规则：主手术匹配");
                 
-            if (MDCC_DRG.CB41_group(record)){
-                return "CB41";
-            }
-    
-            if (MDCC_DRG.CB43_group(record)){
-                return "CB43";
-            }
-    
-            if (MDCC_DRG.CB45_group(record)){
-                return "CB45";
+            if (MDCC_DRG.CB49_group(record)){
+                return "CB49";
             }
 
             return "CB4";

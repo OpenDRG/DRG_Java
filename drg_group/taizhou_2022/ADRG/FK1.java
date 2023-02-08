@@ -18,16 +18,8 @@ public class FK1 {
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FK1入组条件，匹配规则：主诊断匹配、主手术匹配");
                 
-            if (MDCF_DRG.FK11_group(record)){
-                return "FK11";
-            }
-    
-            if (MDCF_DRG.FK13_group(record)){
-                return "FK13";
-            }
-    
-            if (MDCF_DRG.FK15_group(record)){
-                return "FK15";
+            if (MDCF_DRG.FK19_group(record)){
+                return "FK19";
             }
 
             return "FK1";

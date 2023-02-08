@@ -18,16 +18,8 @@ public class FN1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FN1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCF_DRG.FN11_group(record)){
-                return "FN11";
-            }
-    
-            if (MDCF_DRG.FN13_group(record)){
-                return "FN13";
-            }
-    
-            if (MDCF_DRG.FN15_group(record)){
-                return "FN15";
+            if (MDCF_DRG.FN19_group(record)){
+                return "FN19";
             }
 
             return "FN1";

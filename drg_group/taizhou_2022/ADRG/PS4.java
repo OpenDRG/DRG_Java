@@ -17,7 +17,19 @@ public class PS4 {
         
         if (true && Base.intersect(record.zdList,adrg_zd) && record.weight>0 && record.weight>=2500 && record.ageDay<=28){
             Base.groupMessages.putMessage(record.Index,"符合PS4入组条件，匹配规则：某一诊断匹配、体重大于2500克、新生儿");
-            
+                
+            if (MDCP_DRG.PS41_group(record)){
+                return "PS41";
+            }
+    
+            if (MDCP_DRG.PS43_group(record)){
+                return "PS43";
+            }
+    
+            if (MDCP_DRG.PS45_group(record)){
+                return "PS45";
+            }
+
             return "PS4";
         }else{
             return "";

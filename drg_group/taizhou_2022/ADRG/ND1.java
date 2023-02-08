@@ -18,16 +18,8 @@ public class ND1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合ND1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCN_DRG.ND11_group(record)){
-                return "ND11";
-            }
-    
-            if (MDCN_DRG.ND13_group(record)){
-                return "ND13";
-            }
-    
-            if (MDCN_DRG.ND15_group(record)){
-                return "ND15";
+            if (MDCN_DRG.ND19_group(record)){
+                return "ND19";
             }
 
             return "ND1";

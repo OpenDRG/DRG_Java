@@ -18,16 +18,8 @@ public class BC2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BC2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCB_DRG.BC21_group(record)){
-                return "BC21";
-            }
-    
-            if (MDCB_DRG.BC23_group(record)){
-                return "BC23";
-            }
-    
-            if (MDCB_DRG.BC25_group(record)){
-                return "BC25";
+            if (MDCB_DRG.BC29_group(record)){
+                return "BC29";
             }
 
             return "BC2";

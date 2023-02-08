@@ -18,16 +18,8 @@ public class OD1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合OD1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCO_DRG.OD11_group(record)){
-                return "OD11";
-            }
-    
-            if (MDCO_DRG.OD13_group(record)){
-                return "OD13";
-            }
-    
-            if (MDCO_DRG.OD15_group(record)){
-                return "OD15";
+            if (MDCO_DRG.OD19_group(record)){
+                return "OD19";
             }
 
             return "OD1";

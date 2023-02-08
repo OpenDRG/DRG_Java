@@ -18,16 +18,8 @@ public class EB1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合EB1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCE_DRG.EB11_group(record)){
-                return "EB11";
-            }
-    
-            if (MDCE_DRG.EB13_group(record)){
-                return "EB13";
-            }
-    
-            if (MDCE_DRG.EB15_group(record)){
-                return "EB15";
+            if (MDCE_DRG.EB19_group(record)){
+                return "EB19";
             }
 
             return "EB1";

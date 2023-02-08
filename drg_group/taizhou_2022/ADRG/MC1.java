@@ -18,16 +18,8 @@ public class MC1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合MC1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCM_DRG.MC11_group(record)){
-                return "MC11";
-            }
-    
-            if (MDCM_DRG.MC13_group(record)){
-                return "MC13";
-            }
-    
-            if (MDCM_DRG.MC15_group(record)){
-                return "MC15";
+            if (MDCM_DRG.MC19_group(record)){
+                return "MC19";
             }
 
             return "MC1";

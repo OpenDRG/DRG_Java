@@ -18,8 +18,16 @@ public class BM1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BM1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCB_DRG.BM19_group(record)){
-                return "BM19";
+            if (MDCB_DRG.BM11_group(record)){
+                return "BM11";
+            }
+    
+            if (MDCB_DRG.BM13_group(record)){
+                return "BM13";
+            }
+    
+            if (MDCB_DRG.BM15_group(record)){
+                return "BM15";
             }
 
             return "BM1";

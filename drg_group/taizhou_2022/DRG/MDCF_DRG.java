@@ -7,11 +7,11 @@ import drg_group.taizhou_2022.MedicalRecord;
 
 public class MDCF_DRG {
 
-    public static boolean FV10_group(MedicalRecord record){
-        return record.age<17;
+    public static boolean FJ19_group(MedicalRecord record){
+        return true;
     }
 
-    public static boolean FC19_group(MedicalRecord record){
+    public static boolean FK39_group(MedicalRecord record){
         return true;
     }
 
@@ -19,15 +19,23 @@ public class MDCF_DRG {
         return true;
     }
 
-    public static boolean FD39_group(MedicalRecord record){
+    public static boolean FK19_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean FC29_group(MedicalRecord record){
+    public static boolean FV29_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean FD29_group(MedicalRecord record){
+    public static boolean FN19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FC19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FL39_group(MedicalRecord record){
         return true;
     }
 
@@ -35,11 +43,23 @@ public class MDCF_DRG {
         return true;
     }
 
-    public static boolean FB19_group(MedicalRecord record){
+    public static boolean FE19_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean FK29_group(MedicalRecord record){
+    public static boolean FE29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FM49_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FM39_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FV39_group(MedicalRecord record){
         return true;
     }
 
@@ -47,11 +67,43 @@ public class MDCF_DRG {
         return true;
     }
 
-    public static boolean FW21_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    public static boolean FT49_group(MedicalRecord record){
+        return true;
     }
 
-    public static boolean FR41_group(MedicalRecord record){
+    public static boolean FM29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FM19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FK29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FB29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FF19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FB19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FD29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FF29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FW21_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
@@ -59,11 +111,11 @@ public class MDCF_DRG {
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean FF11_group(MedicalRecord record){
+    public static boolean FP11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean FV41_group(MedicalRecord record){
+    public static boolean FT11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
@@ -75,51 +127,7 @@ public class MDCF_DRG {
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean FW11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FB21_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FJ11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FE11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FM21_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FV31_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FF41_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FZ11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FC31_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FF21_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FB31_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FF31_group(MedicalRecord record){
+    public static boolean FD31_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
@@ -127,23 +135,7 @@ public class MDCF_DRG {
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean FM31_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FR21_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FM11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FU11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
-    public static boolean FV11_group(MedicalRecord record){
+    public static boolean FZ11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
@@ -151,11 +143,19 @@ public class MDCF_DRG {
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean FS11_group(MedicalRecord record){
+    public static boolean FV11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean FK31_group(MedicalRecord record){
+    public static boolean FU11_group(MedicalRecord record){
+        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    }
+
+    public static boolean FR41_group(MedicalRecord record){
+        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    }
+
+    public static boolean FW11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
@@ -163,20 +163,72 @@ public class MDCF_DRG {
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean FN11_group(MedicalRecord record){
+    public static boolean FF31_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean FK11_group(MedicalRecord record){
+    public static boolean FR21_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean FV21_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    public static boolean FR33_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
-    public static boolean FT11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    public static boolean FT33_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FW13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FR13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FP13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FR43_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FN23_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FZ13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FT23_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FU13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FV13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FR23_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FW23_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FD33_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean FT13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
     public static boolean FF33_group(MedicalRecord record){
@@ -187,175 +239,7 @@ public class MDCF_DRG {
         return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
-    public static boolean FM33_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FK13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FW23_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FV23_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FB33_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FF43_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FR33_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FM23_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FV33_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FW13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FZ13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FB23_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FT23_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FJ13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FN23_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FC33_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FS13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FK33_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FR13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FE13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FT33_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FR43_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FF23_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FN13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FF13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FV13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FM13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FR23_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FV43_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FT13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FU13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean FJ15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FK15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FF15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FV45_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FV25_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FB25_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FV15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FC35_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FZ15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FT25_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FU15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FK35_group(MedicalRecord record){
+    public static boolean FP15_group(MedicalRecord record){
         return true;
     }
 
@@ -363,47 +247,7 @@ public class MDCF_DRG {
         return true;
     }
 
-    public static boolean FE15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FM15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FF35_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FR15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FV35_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FU25_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FW25_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FS15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FM35_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FF25_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean FM25_group(MedicalRecord record){
+    public static boolean FT15_group(MedicalRecord record){
         return true;
     }
 
@@ -411,27 +255,43 @@ public class MDCF_DRG {
         return true;
     }
 
+    public static boolean FT35_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FW25_group(MedicalRecord record){
+        return true;
+    }
+
     public static boolean FN25_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean FF45_group(MedicalRecord record){
+    public static boolean FU15_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean FT15_group(MedicalRecord record){
+    public static boolean FR15_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean FB35_group(MedicalRecord record){
+    public static boolean FV15_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean FR25_group(MedicalRecord record){
+    public static boolean FZ15_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean FT35_group(MedicalRecord record){
+    public static boolean FF35_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FU25_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FD35_group(MedicalRecord record){
         return true;
     }
 
@@ -439,7 +299,11 @@ public class MDCF_DRG {
         return true;
     }
 
-    public static boolean FN15_group(MedicalRecord record){
+    public static boolean FT25_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean FR25_group(MedicalRecord record){
         return true;
     }
 

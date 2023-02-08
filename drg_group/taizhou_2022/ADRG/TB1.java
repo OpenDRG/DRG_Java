@@ -18,8 +18,16 @@ public class TB1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(Base.SS_VALID,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合TB1入组条件，匹配规则：存在手术");
                 
-            if (MDCT_DRG.TB19_group(record)){
-                return "TB19";
+            if (MDCT_DRG.TB11_group(record)){
+                return "TB11";
+            }
+    
+            if (MDCT_DRG.TB13_group(record)){
+                return "TB13";
+            }
+    
+            if (MDCT_DRG.TB15_group(record)){
+                return "TB15";
             }
 
             return "TB1";

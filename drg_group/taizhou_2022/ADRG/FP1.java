@@ -17,7 +17,19 @@ public class FP1 {
         
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FP1入组条件，匹配规则：主诊断匹配、主手术匹配");
-            
+                
+            if (MDCF_DRG.FP11_group(record)){
+                return "FP11";
+            }
+    
+            if (MDCF_DRG.FP13_group(record)){
+                return "FP13";
+            }
+    
+            if (MDCF_DRG.FP15_group(record)){
+                return "FP15";
+            }
+
             return "FP1";
         }else{
             return "";

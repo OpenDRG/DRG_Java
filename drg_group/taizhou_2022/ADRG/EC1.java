@@ -18,16 +18,8 @@ public class EC1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合EC1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCE_DRG.EC11_group(record)){
-                return "EC11";
-            }
-    
-            if (MDCE_DRG.EC13_group(record)){
-                return "EC13";
-            }
-    
-            if (MDCE_DRG.EC15_group(record)){
-                return "EC15";
+            if (MDCE_DRG.EC19_group(record)){
+                return "EC19";
             }
 
             return "EC1";

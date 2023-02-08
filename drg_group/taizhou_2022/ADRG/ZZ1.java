@@ -15,7 +15,7 @@ public class ZZ1 {
         String[] adrg_ss={};
         String[] adrg_ss1={};
         
-        if (true && !Base.intersect(record.ssList,Base.SS_VALID)){
+        if (true && (record.ssList==null || record.ssList.length==0 || !Base.contains(Base.SS_VALID,record.ssList[0]))){
             Base.groupMessages.putMessage(record.Index,"符合ZZ1入组条件，匹配规则：无手术");
                 
             if (MDCZ_DRG.ZZ11_group(record)){

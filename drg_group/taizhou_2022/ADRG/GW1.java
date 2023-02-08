@@ -18,16 +18,8 @@ public class GW1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GW1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCG_DRG.GW11_group(record)){
-                return "GW11";
-            }
-    
-            if (MDCG_DRG.GW13_group(record)){
-                return "GW13";
-            }
-    
-            if (MDCG_DRG.GW15_group(record)){
-                return "GW15";
+            if (MDCG_DRG.GW19_group(record)){
+                return "GW19";
             }
 
             return "GW1";

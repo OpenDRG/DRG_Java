@@ -18,16 +18,8 @@ public class LB1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合LB1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCL_DRG.LB11_group(record)){
-                return "LB11";
-            }
-    
-            if (MDCL_DRG.LB13_group(record)){
-                return "LB13";
-            }
-    
-            if (MDCL_DRG.LB15_group(record)){
-                return "LB15";
+            if (MDCL_DRG.LB19_group(record)){
+                return "LB19";
             }
 
             return "LB1";

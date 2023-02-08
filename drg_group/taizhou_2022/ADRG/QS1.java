@@ -18,16 +18,8 @@ public class QS1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合QS1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCQ_DRG.QS11_group(record)){
-                return "QS11";
-            }
-    
-            if (MDCQ_DRG.QS13_group(record)){
-                return "QS13";
-            }
-    
-            if (MDCQ_DRG.QS15_group(record)){
-                return "QS15";
+            if (MDCQ_DRG.QS19_group(record)){
+                return "QS19";
             }
 
             return "QS1";

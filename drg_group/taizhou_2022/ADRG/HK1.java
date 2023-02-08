@@ -18,16 +18,8 @@ public class HK1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HK1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCH_DRG.HK11_group(record)){
-                return "HK11";
-            }
-    
-            if (MDCH_DRG.HK13_group(record)){
-                return "HK13";
-            }
-    
-            if (MDCH_DRG.HK15_group(record)){
-                return "HK15";
+            if (MDCH_DRG.HK19_group(record)){
+                return "HK19";
             }
 
             return "HK1";

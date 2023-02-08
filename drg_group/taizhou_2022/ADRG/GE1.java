@@ -18,20 +18,8 @@ public class GE1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GE1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCG_DRG.GE10_group(record)){
-                return "GE10";
-            }
-    
-            if (MDCG_DRG.GE11_group(record)){
-                return "GE11";
-            }
-    
-            if (MDCG_DRG.GE13_group(record)){
-                return "GE13";
-            }
-    
-            if (MDCG_DRG.GE15_group(record)){
-                return "GE15";
+            if (MDCG_DRG.GE19_group(record)){
+                return "GE19";
             }
 
             return "GE1";

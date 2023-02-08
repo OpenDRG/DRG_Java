@@ -18,16 +18,8 @@ public class OS1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合OS1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCO_DRG.OS11_group(record)){
-                return "OS11";
-            }
-    
-            if (MDCO_DRG.OS13_group(record)){
-                return "OS13";
-            }
-    
-            if (MDCO_DRG.OS15_group(record)){
-                return "OS15";
+            if (MDCO_DRG.OS19_group(record)){
+                return "OS19";
             }
 
             return "OS1";

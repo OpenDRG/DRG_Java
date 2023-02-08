@@ -18,20 +18,8 @@ public class IG1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IG1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCI_DRG.IG10_group(record)){
-                return "IG10";
-            }
-    
-            if (MDCI_DRG.IG11_group(record)){
-                return "IG11";
-            }
-    
-            if (MDCI_DRG.IG13_group(record)){
-                return "IG13";
-            }
-    
-            if (MDCI_DRG.IG15_group(record)){
-                return "IG15";
+            if (MDCI_DRG.IG19_group(record)){
+                return "IG19";
             }
 
             return "IG1";

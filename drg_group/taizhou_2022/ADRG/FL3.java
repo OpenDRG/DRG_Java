@@ -17,7 +17,11 @@ public class FL3 {
         
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FL3入组条件，匹配规则：主手术匹配");
-            
+                
+            if (MDCF_DRG.FL39_group(record)){
+                return "FL39";
+            }
+
             return "FL3";
         }else{
             return "";

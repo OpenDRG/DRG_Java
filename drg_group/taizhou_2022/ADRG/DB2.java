@@ -18,10 +18,6 @@ public class DB2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合DB2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCD_DRG.DB20_group(record)){
-                return "DB20";
-            }
-    
             if (MDCD_DRG.DB29_group(record)){
                 return "DB29";
             }

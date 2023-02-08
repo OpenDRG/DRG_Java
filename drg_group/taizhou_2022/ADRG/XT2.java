@@ -18,16 +18,8 @@ public class XT2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合XT2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCX_DRG.XT21_group(record)){
-                return "XT21";
-            }
-    
-            if (MDCX_DRG.XT23_group(record)){
-                return "XT23";
-            }
-    
-            if (MDCX_DRG.XT25_group(record)){
-                return "XT25";
+            if (MDCX_DRG.XT29_group(record)){
+                return "XT29";
             }
 
             return "XT2";

@@ -18,16 +18,8 @@ public class FV2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FV2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCF_DRG.FV21_group(record)){
-                return "FV21";
-            }
-    
-            if (MDCF_DRG.FV23_group(record)){
-                return "FV23";
-            }
-    
-            if (MDCF_DRG.FV25_group(record)){
-                return "FV25";
+            if (MDCF_DRG.FV29_group(record)){
+                return "FV29";
             }
 
             return "FV2";
