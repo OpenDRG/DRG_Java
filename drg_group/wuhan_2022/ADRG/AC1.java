@@ -17,7 +17,11 @@ public class AC1 {
         
         if (true && record.ssList!=null && record.ssList.length>0 && Base.intersect(record.ssList,adrg_ss) && Base.intersect(record.ssList,adrg_ss1)){
             Base.groupMessages.putMessage(record.Index,"符合AC1入组条件，匹配规则：双手术匹配");
-            
+                
+            if (MDCA_DRG.AC19_group(record)){
+                return "AC19";
+            }
+
             return "AC1";
         }else{
             return "";

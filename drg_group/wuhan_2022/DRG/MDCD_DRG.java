@@ -7,23 +7,7 @@ import drg_group.wuhan_2022.MedicalRecord;
 
 public class MDCD_DRG {
 
-    public static boolean DC29_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DG29_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DD29_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DC19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DV19_group(MedicalRecord record){
+    public static boolean DA19_group(MedicalRecord record){
         return true;
     }
 
@@ -31,23 +15,15 @@ public class MDCD_DRG {
         return true;
     }
 
-    public static boolean DA19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DS19_group(MedicalRecord record){
-        return true;
-    }
-
     public static boolean DB29_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean DG39_group(MedicalRecord record){
+    public static boolean DC19_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean DG19_group(MedicalRecord record){
+    public static boolean DC29_group(MedicalRecord record){
         return true;
     }
 
@@ -55,11 +31,35 @@ public class MDCD_DRG {
         return true;
     }
 
-    public static boolean DW19_group(MedicalRecord record){
+    public static boolean DD29_group(MedicalRecord record){
         return true;
     }
 
     public static boolean DE29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DG19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DG29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DG39_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DS19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DV19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DW19_group(MedicalRecord record){
         return true;
     }
 
@@ -71,19 +71,19 @@ public class MDCD_DRG {
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean DU11_group(MedicalRecord record){
-        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
-    }
-
     public static boolean DR11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean DZ11_group(MedicalRecord record){
+    public static boolean DT21_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean DT21_group(MedicalRecord record){
+    public static boolean DU11_group(MedicalRecord record){
+        return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
+    }
+
+    public static boolean DZ11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
@@ -95,11 +95,7 @@ public class MDCD_DRG {
         return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
-    public static boolean DZ13_group(MedicalRecord record){
-        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
-    }
-
-    public static boolean DU13_group(MedicalRecord record){
+    public static boolean DK13_group(MedicalRecord record){
         return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
@@ -107,19 +103,31 @@ public class MDCD_DRG {
         return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
-    public static boolean DK13_group(MedicalRecord record){
+    public static boolean DU13_group(MedicalRecord record){
         return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
-    public static boolean DR1B_group(MedicalRecord record){
-        return true;
+    public static boolean DZ13_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
     public static boolean DJ1B_group(MedicalRecord record){
         return true;
     }
 
+    public static boolean DR1B_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DE15_group(MedicalRecord record){
+        return true;
+    }
+
     public static boolean DK15_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DT15_group(MedicalRecord record){
         return true;
     }
 
@@ -132,14 +140,6 @@ public class MDCD_DRG {
     }
 
     public static boolean DZ15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DT15_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DE15_group(MedicalRecord record){
         return true;
     }
 

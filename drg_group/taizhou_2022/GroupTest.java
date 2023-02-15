@@ -9,10 +9,9 @@ import java.util.List;
 public class GroupTest {
     public static void main(String[] args) {
         GroupProxy grouper=new GroupProxy();
-        // System.out.println(grouper.group_record(
-            // "22058878,2,88,32460,,13040503,94,1,K80.302|K80.305|K83.109|K72.905|Z90.408|E14.900x001,51.8803|51.8701|54.5100x005|45.1301"));
-        // group(grouper);
+        // System.out.println(grouper.group_record("22139456,1.0,51.0,18987.0,,13110006.0,10.0,2.0,\"K75.000,J98.414,R68.800x001,N19.x03,J96.900x001,K76.800x006,E14.900x001,I10.x00x002\",\"96.7201,96.0400,38.9301,38.9303,99.0800\",AH11"));
         // grouper.group_txt();
+        // group(grouper);
         // System.exit(0);
 
         if (args==null||args.length==0){
@@ -34,9 +33,9 @@ public class GroupTest {
         }
     }
     // public static void group(GroupProxy grouper){
-    //     String yearMonth="202201-202206";
-    //     Path filename=Paths.get("/mnt/c/yb/sz",String.format("hqms_group_%s.csv", yearMonth));
-    //     List<String> cols=Arrays.asList("病案号","性别","年龄","年龄天","出生体重","出院科别","实际住院（天）","离院方式","诊断编码","手术操作编码");
+    //     String yearMonth="202212";
+    //     Path filename=Paths.get("/mnt/c/yb/yc",String.format("ba_group_info_%s.csv", yearMonth));
+    //     List<String> cols=Arrays.asList("BAHM","BRXB","NL","NLT","XSECSTZ","CYKS","ZYTS","LYFS","ICD10_DRGS","ICD9_DRGS");
     //     grouper.group_csv(filename,cols);
     // }
 }

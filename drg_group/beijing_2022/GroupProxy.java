@@ -141,7 +141,7 @@ public class GroupProxy {
         return result;
     }
     public GroupResult group_record(String record_str) {
-        return group_record(new MedicalRecord(Pattern.compile(",").splitAsStream(record_str)));
+        return group_record(new MedicalRecord(Pattern.compile(",").splitAsStream(replace_csv(record_str))));
     }
     public void group_txt(){
         Date d1= new Date();
@@ -206,19 +206,6 @@ public class GroupProxy {
         return read_dataFile(folder,dataFile,false);
     }
     public static Map<String,String> read_dataFile(String folder,String dataFile,Boolean dropSame){
-        // Path filename=Paths.get(GroupProxy.class.getResource("/").getPath(),
-        //     GroupProxy.class.getPackage().getName().replace(".", File.separator),folder,dataFile+".dat");
-        // try {
-        //     if (dropSame){
-        //         return Files.lines(filename).filter(x->!x.split(" ")[0].equals(x.split(" ")[1]))
-        //             .collect(Collectors.toMap(x->x.split(" ")[0], x->x.split(" ")[1]));
-        //     }else{
-        //         return Files.lines(filename).collect(Collectors.toMap(x->x.split(" ")[0], x->x.split(" ")[1]));
-        //     }
-        // } catch (IOException e) {
-        //     e.printStackTrace();
-        // }
-        // return null;
         InputStream inputStream =Base.class.getResourceAsStream(
             "/"+Base.class.getPackage().getName().replace(".", "/")+"/"+folder+"/"+dataFile+".dat");
         BufferedReader br= new BufferedReader(new InputStreamReader(inputStream,StandardCharsets.UTF_8));

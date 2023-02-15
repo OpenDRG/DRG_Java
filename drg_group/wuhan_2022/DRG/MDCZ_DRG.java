@@ -7,10 +7,6 @@ import drg_group.wuhan_2022.MedicalRecord;
 
 public class MDCZ_DRG {
 
-    public static boolean ZJ19_group(MedicalRecord record){
-        return true;
-    }
-
     public static boolean ZB19_group(MedicalRecord record){
         return true;
     }
@@ -20,6 +16,10 @@ public class MDCZ_DRG {
     }
 
     public static boolean ZD19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean ZJ19_group(MedicalRecord record){
         return true;
     }
 

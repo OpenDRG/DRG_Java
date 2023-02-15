@@ -7,7 +7,19 @@ import drg_group.wuhan_2022.MedicalRecord;
 
 public class MDCP_DRG {
 
+    public static boolean PB19_group(MedicalRecord record){
+        return true;
+    }
+
     public static boolean PC19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean PJ19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean PR19_group(MedicalRecord record){
         return true;
     }
 
@@ -19,15 +31,7 @@ public class MDCP_DRG {
         return true;
     }
 
-    public static boolean PR19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean PJ19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean PB19_group(MedicalRecord record){
+    public static boolean PT29_group(MedicalRecord record){
         return true;
     }
 

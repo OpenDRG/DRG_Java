@@ -11,11 +11,11 @@ public class MDCY_DRG {
         return true;
     }
 
-    public static boolean YR11_group(MedicalRecord record){
+    public static boolean YC11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
-    public static boolean YC11_group(MedicalRecord record){
+    public static boolean YR11_group(MedicalRecord record){
         return record.zdList.length>1 && Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length));
     }
 
@@ -27,11 +27,11 @@ public class MDCY_DRG {
         return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
     }
 
-    public static boolean YR15_group(MedicalRecord record){
+    public static boolean YC15_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean YC15_group(MedicalRecord record){
+    public static boolean YR15_group(MedicalRecord record){
         return true;
     }
 
