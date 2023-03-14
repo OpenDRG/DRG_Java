@@ -25,6 +25,8 @@
 |CHS-DRG 1.1<br>北京版细分组|drg_group/beijing_2022|696组| 适用于北京版细分组|
 |CHS-DRG 1.1<br>兰州2022细分组|drg_group/lanzhou_2022|792组| 适用于甘肃省兰州市2022版细分组|
 |CHS-DRG 1.1<br>福州2022细分组|drg_group/fuzhou_2022|563组| 适用于福建省福州市2022版细分组|
+|ZJ-DRG 1.1<br>浙江2022细分组|drg_group/zhejiang_2022|1006组| 适用于浙江省2022版细分组|
+|CHS-DRG 1.0修订版<br>西安2020细分组|drg_group/xian_2020|618组| 适用于陕西省西安市2020版细分组|
 
 &emsp;&emsp;目前已经研究过DRG分组规则的地区，包括：
 * 北京
