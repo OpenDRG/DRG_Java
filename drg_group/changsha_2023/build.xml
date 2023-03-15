@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="changsha_2023" default="jar" basedir=".">
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+    <target name="compile" depends="clean">
+        <mkdir dir="build/classes"/>
+        <javac encoding="utf-8" srcdir="." destdir="build/classes" includeAntRuntime="false"/>
+    </target>
+    <target name="run" depends="compile">
+        <java classname="drg_group.changsha_2023.GroupTest">
+            <classpath>
+                <pathelement path="build/classes"/>
+            </classpath>
+        </java>
+    </target>
+    <target name="jar" depends="compile">
+        <mkdir dir="build/jar"/>
+        <jar destfile="./build/jar/grouper_changsha_2023.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-class" value="drg_group.changsha_2023.GroupTest"/>
+            </manifest>
+            <zipfileset dir="ICD" prefix="drg_group/changsha_2023/ICD"/>
+            <zipfileset dir="DATA" prefix="drg_group/changsha_2023/DATA"/>
+        </jar>
+    </target>
+</project>
