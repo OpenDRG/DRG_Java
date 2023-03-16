@@ -16,6 +16,16 @@ public class Messages {
         return messages.get(index).contains(message);
     }
     public List<String> returnMessages(String index){
+        // List<String> record_messages=Messages.get(index);
+        // List<String> result;
+        // if (record_messages.contains("不符合MDCA的ADRG入组条件")){
+        //     result= new ArrayList<>(record_messages.subList(record_messages.indexOf("不符合MDCA的ADRG入组条件")+1, record_messages.size()));
+        // }
+        // else{
+        //     result= new ArrayList<>(record_messages);
+        // }
+        // record_messages.clear();
+        // return result;
         List<String> result=messages.get(index);
         if (result.contains("不符合MDCA的ADRG入组条件")){
             return result.subList(result.indexOf("不符合MDCA的ADRG入组条件")+1, result.size());

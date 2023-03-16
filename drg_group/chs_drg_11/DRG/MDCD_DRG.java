@@ -7,23 +7,7 @@ import drg_group.chs_drg_11.MedicalRecord;
 
 public class MDCD_DRG {
 
-    public static boolean DS19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DW19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DT19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DG29_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DV19_group(MedicalRecord record){
+    public static boolean DA19_group(MedicalRecord record){
         return true;
     }
 
@@ -31,7 +15,15 @@ public class MDCD_DRG {
         return true;
     }
 
-    public static boolean DU19_group(MedicalRecord record){
+    public static boolean DB29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DB39_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DC19_group(MedicalRecord record){
         return true;
     }
 
@@ -43,39 +35,7 @@ public class MDCD_DRG {
         return true;
     }
 
-    public static boolean DR19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DA19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DB39_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DZ19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DG19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DB29_group(MedicalRecord record){
-        return true;
-    }
-
     public static boolean DD29_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DK19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean DC19_group(MedicalRecord record){
         return true;
     }
 
@@ -83,7 +43,47 @@ public class MDCD_DRG {
         return true;
     }
 
+    public static boolean DG19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DG29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DK19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DR19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DS19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DT19_group(MedicalRecord record){
+        return true;
+    }
+
     public static boolean DT29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DU19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DV19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DW19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean DZ19_group(MedicalRecord record){
         return true;
     }
 

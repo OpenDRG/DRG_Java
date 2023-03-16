@@ -1,5 +1,6 @@
 package drg_group.chs_drg_11.ADRG;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,6 +11,7 @@ import drg_group.chs_drg_11.DRG.MDCR_DRG;
 public class RW2 {
     public static String group(MedicalRecord record){
         String[] adrg_zd={"Z51.000x013","Z51.100x004","Z51.500x003","Z51.800x953","Z51.800x983"};
+        String[] adrg_zd1={};
         String[] adrg_ss={};
         String[] adrg_ss1={};
         

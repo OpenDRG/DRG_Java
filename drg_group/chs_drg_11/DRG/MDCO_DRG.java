@@ -7,19 +7,7 @@ import drg_group.chs_drg_11.MedicalRecord;
 
 public class MDCO_DRG {
 
-    public static boolean OZ19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean OS29_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean OJ19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean OR19_group(MedicalRecord record){
+    public static boolean OB19_group(MedicalRecord record){
         return true;
     }
 
@@ -27,11 +15,7 @@ public class MDCO_DRG {
         return true;
     }
 
-    public static boolean OB19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean OT19_group(MedicalRecord record){
+    public static boolean OD19_group(MedicalRecord record){
         return true;
     }
 
@@ -43,15 +27,31 @@ public class MDCO_DRG {
         return true;
     }
 
+    public static boolean OF19_group(MedicalRecord record){
+        return true;
+    }
+
     public static boolean OF29_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean OD19_group(MedicalRecord record){
+    public static boolean OJ19_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean OF19_group(MedicalRecord record){
+    public static boolean OR19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean OS29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean OT19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean OZ19_group(MedicalRecord record){
         return true;
     }
 

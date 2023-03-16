@@ -1,5 +1,6 @@
 package drg_group.chs_drg_11.ADRG;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,10 +11,11 @@ import drg_group.chs_drg_11.DRG.MDCZ_DRG;
 public class ZZ1 {
     public static String group(MedicalRecord record){
         String[] adrg_zd={};
+        String[] adrg_zd1={};
         String[] adrg_ss={};
         String[] adrg_ss1={};
         
-        if (true && (record.ssList==null || record.ssList.length==0 || !Base.contains(Base.SS_VALID,record.ssList[0]))){
+        if (true && !Base.intersect(record.ssList,Base.SS_VALID)){
             Base.groupMessages.putMessage(record.Index,"符合ZZ1入组条件，匹配规则：无手术");
                 
             if (MDCZ_DRG.ZZ11_group(record)){

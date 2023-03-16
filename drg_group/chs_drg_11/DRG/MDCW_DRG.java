@@ -11,7 +11,7 @@ public class MDCW_DRG {
         return true;
     }
 
-    public static boolean WR19_group(MedicalRecord record){
+    public static boolean WC19_group(MedicalRecord record){
         return true;
     }
 
@@ -19,7 +19,7 @@ public class MDCW_DRG {
         return true;
     }
 
-    public static boolean WC19_group(MedicalRecord record){
+    public static boolean WR19_group(MedicalRecord record){
         return true;
     }
 

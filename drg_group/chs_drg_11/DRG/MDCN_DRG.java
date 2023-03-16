@@ -7,35 +7,7 @@ import drg_group.chs_drg_11.MedicalRecord;
 
 public class MDCN_DRG {
 
-    public static boolean NF19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean NZ19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean NB19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean ND19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean NG19_group(MedicalRecord record){
-        return true;
-    }
-
     public static boolean NA19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean NJ19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean NE19_group(MedicalRecord record){
         return true;
     }
 
@@ -43,11 +15,39 @@ public class MDCN_DRG {
         return true;
     }
 
-    public static boolean NS19_group(MedicalRecord record){
+    public static boolean NB19_group(MedicalRecord record){
         return true;
     }
 
     public static boolean NC19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean ND19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean NE19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean NF19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean NG19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean NJ19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean NS19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean NZ19_group(MedicalRecord record){
         return true;
     }
 

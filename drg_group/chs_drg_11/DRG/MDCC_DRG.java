@@ -7,7 +7,7 @@ import drg_group.chs_drg_11.MedicalRecord;
 
 public class MDCC_DRG {
 
-    public static boolean CB39_group(MedicalRecord record){
+    public static boolean CB19_group(MedicalRecord record){
         return true;
     }
 
@@ -15,7 +15,7 @@ public class MDCC_DRG {
         return true;
     }
 
-    public static boolean CJ19_group(MedicalRecord record){
+    public static boolean CB39_group(MedicalRecord record){
         return true;
     }
 
@@ -23,35 +23,7 @@ public class MDCC_DRG {
         return true;
     }
 
-    public static boolean CS19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean CZ19_group(MedicalRecord record){
-        return true;
-    }
-
     public static boolean CC19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean CW19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean CT19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean CD29_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean CB19_group(MedicalRecord record){
-        return true;
-    }
-
-    public static boolean CU19_group(MedicalRecord record){
         return true;
     }
 
@@ -59,7 +31,35 @@ public class MDCC_DRG {
         return true;
     }
 
+    public static boolean CD29_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean CJ19_group(MedicalRecord record){
+        return true;
+    }
+
     public static boolean CR19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean CS19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean CT19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean CU19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean CV19_group(MedicalRecord record){
+        return true;
+    }
+
+    public static boolean CW19_group(MedicalRecord record){
         return true;
     }
 
@@ -67,7 +67,7 @@ public class MDCC_DRG {
         return true;
     }
 
-    public static boolean CV19_group(MedicalRecord record){
+    public static boolean CZ19_group(MedicalRecord record){
         return true;
     }
 
