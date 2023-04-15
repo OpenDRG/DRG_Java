@@ -38,7 +38,7 @@ public class GroupTest {
     //     String yearMonth="202209";
     //     Path filename=Paths.get("/mnt/c/yb/yc",String.format("ba_group_info_%s.csv", yearMonth));
     //     List<String> cols=Arrays.asList("BAHM","BRXB","NL","NLT","XSECSTZ","CYKS","ZYTS","LYFS","ICD10_DRGS","ICD9_DRGS");
-    //     grouper.group_csv(x->Grouper_yancheng_2022.group(x),filename,cols);
+    //     grouper.group_csv(x->Grouper_yancheng_2023.group(x),filename,cols);
     // }
     // public static void group_suzhou(GroupProxy grouper){
     //     String yearMonth="202201-202206";
