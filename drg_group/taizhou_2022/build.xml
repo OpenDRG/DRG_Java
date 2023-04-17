@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="suzhou_2022" default="jar" basedir=".">
+<project name="taizhou_2022" default="jar" basedir=".">
     <target name="clean">
         <delete dir="build"/>
     </target>
@@ -8,7 +8,7 @@
         <javac encoding="utf-8" srcdir="." destdir="build/classes" includeAntRuntime="false"/>
     </target>
     <target name="run" depends="compile">
-        <java classname="drg_group.suzhou_2022.GroupTest">
+        <java classname="drg_group.taizhou_2022.GroupTest">
             <classpath>
                 <pathelement path="build/classes"/>
             </classpath>
@@ -16,12 +16,12 @@
     </target>
     <target name="jar" depends="compile">
         <mkdir dir="build/jar"/>
-        <jar destfile="./build/jar/grouper_suzhou_2022.jar" basedir="build/classes">
+        <jar destfile="./build/jar/grouper_taizhou_2022.jar" basedir="build/classes">
             <manifest>
-                <attribute name="Main-class" value="drg_group.suzhou_2022.GroupTest"/>
+                <attribute name="Main-class" value="drg_group.taizhou_2022.GroupTest"/>
             </manifest>
-            <zipfileset dir="ICD" prefix="drg_group/suzhou_2022/ICD"/>
-            <zipfileset dir="DATA" prefix="drg_group/suzhou_2022/DATA"/>
+            <zipfileset dir="ICD" prefix="drg_group/taizhou_2022/ICD"/>
+            <zipfileset dir="DATA" prefix="drg_group/taizhou_2022/DATA"/>
         </jar>
     </target>
 </project>
