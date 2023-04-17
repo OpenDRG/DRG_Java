@@ -1,5 +1,28 @@
 # OpenDRG的目标是成为国家医保局CHS-DRG的开源实现，就像OpenJDK是Java SE的开源实现一样
 
+## 分组器版本
+国家医保局CHS-DRG分组器，Java实现版
+
+|分组器版本|实现的分组方案|
+|-|-|
+|drg_group/chs_drg_11|CHS-DRG 1.1标准版、铜川版、临沂版|
+|drg_group/chs_drg_10|CHS-DRG 1.0修订版、西安版、成都版|
+|drg_group/yancheng_2023|盐城版|
+|drg_group/suzhou_2023|苏州版|
+|drg_group/taizhou_2022|泰州版|
+|drg_group/wuxi_2022|无锡版|
+|drg_group/wuhan_2022|武汉版|
+|drg_group/beijing_2022|北京版|
+|drg_group/lanzhou_2023|兰州版|
+|drg_group/fuzhou_2022|福州版|
+|drg_group/zhejiang_2022|浙江版|
+|drg_group/wlmq_2022|乌鲁木齐版|
+|drg_group/changsha_2022|长株潭衡区域版|
+|drg_group/yantai_2023|烟台版|
+|drg_group/changzhou_2022|常州版|
+
+&emsp;&emsp;其他地区版本的分组器将逐步发布，敬请关注
+
 ## 打包方式
 ### apache ant
 可采用apache ant方式打包，需下载安装，官网地址：https://ant.apache.org/
