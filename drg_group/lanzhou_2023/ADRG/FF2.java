@@ -18,12 +18,12 @@ public class FF2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.intersect(record.ssList,adrg_ss) && Base.intersect(record.ssList,adrg_ss1)){
             Base.groupMessages.putMessage(record.Index,"符合FF2入组条件，匹配规则：双手术匹配");
                 
-            if (MDCF_DRG.FF25_group(record)){
-                return "FF25";
-            }
-    
             if (MDCF_DRG.FF2A_group(record)){
                 return "FF2A";
+            }
+    
+            if (MDCF_DRG.FF25_group(record)){
+                return "FF25";
             }
 
             return "FF2";

@@ -18,16 +18,16 @@ public class KU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合KU1入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCK_DRG.KU11_group(record)){
+                return "KU11";
+            }
+    
             if (MDCK_DRG.KU13_group(record)){
                 return "KU13";
             }
     
             if (MDCK_DRG.KU15_group(record)){
                 return "KU15";
-            }
-    
-            if (MDCK_DRG.KU11_group(record)){
-                return "KU11";
             }
 
             return "KU1";

@@ -18,16 +18,16 @@ public class JS1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合JS1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCJ_DRG.JS15_group(record)){
-                return "JS15";
-            }
-    
             if (MDCJ_DRG.JS11_group(record)){
                 return "JS11";
             }
     
             if (MDCJ_DRG.JS13_group(record)){
                 return "JS13";
+            }
+    
+            if (MDCJ_DRG.JS15_group(record)){
+                return "JS15";
             }
 
             return "JS1";

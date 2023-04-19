@@ -18,12 +18,12 @@ public class KJ1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合KJ1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCK_DRG.KJ1B_group(record)){
-                return "KJ1B";
-            }
-    
             if (MDCK_DRG.KJ11_group(record)){
                 return "KJ11";
+            }
+    
+            if (MDCK_DRG.KJ1B_group(record)){
+                return "KJ1B";
             }
 
             return "KJ1";

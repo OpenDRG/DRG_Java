@@ -18,12 +18,12 @@ public class KV1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合KV1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCK_DRG.KV1B_group(record)){
-                return "KV1B";
-            }
-    
             if (MDCK_DRG.KV11_group(record)){
                 return "KV11";
+            }
+    
+            if (MDCK_DRG.KV1B_group(record)){
+                return "KV1B";
             }
 
             return "KV1";

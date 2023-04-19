@@ -18,12 +18,12 @@ public class ZZ1 {
         if (true && !Base.intersect(record.ssList,Base.SS_VALID)){
             Base.groupMessages.putMessage(record.Index,"符合ZZ1入组条件，匹配规则：无手术");
                 
-            if (MDCZ_DRG.ZZ1B_group(record)){
-                return "ZZ1B";
-            }
-    
             if (MDCZ_DRG.ZZ11_group(record)){
                 return "ZZ11";
+            }
+    
+            if (MDCZ_DRG.ZZ1B_group(record)){
+                return "ZZ1B";
             }
 
             return "ZZ1";

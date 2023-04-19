@@ -18,16 +18,16 @@ public class PU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ageDay<=28){
             Base.groupMessages.putMessage(record.Index,"符合PU1入组条件，匹配规则：主诊断匹配、新生儿");
                 
-            if (MDCP_DRG.PU15_group(record)){
-                return "PU15";
+            if (MDCP_DRG.PU11_group(record)){
+                return "PU11";
             }
     
             if (MDCP_DRG.PU13_group(record)){
                 return "PU13";
             }
     
-            if (MDCP_DRG.PU11_group(record)){
-                return "PU11";
+            if (MDCP_DRG.PU15_group(record)){
+                return "PU15";
             }
 
             return "PU1";

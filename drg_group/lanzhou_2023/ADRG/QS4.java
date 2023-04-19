@@ -18,12 +18,12 @@ public class QS4 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合QS4入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCQ_DRG.QS4B_group(record)){
-                return "QS4B";
-            }
-    
             if (MDCQ_DRG.QS41_group(record)){
                 return "QS41";
+            }
+    
+            if (MDCQ_DRG.QS4B_group(record)){
+                return "QS4B";
             }
 
             return "QS4";

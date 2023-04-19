@@ -18,12 +18,12 @@ public class NJ1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合NJ1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCN_DRG.NJ15_group(record)){
-                return "NJ15";
-            }
-    
             if (MDCN_DRG.NJ1A_group(record)){
                 return "NJ1A";
+            }
+    
+            if (MDCN_DRG.NJ15_group(record)){
+                return "NJ15";
             }
 
             return "NJ1";

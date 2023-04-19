@@ -18,16 +18,16 @@ public class DU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合DU1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCD_DRG.DU15_group(record)){
-                return "DU15";
+            if (MDCD_DRG.DU11_group(record)){
+                return "DU11";
             }
     
             if (MDCD_DRG.DU13_group(record)){
                 return "DU13";
             }
     
-            if (MDCD_DRG.DU11_group(record)){
-                return "DU11";
+            if (MDCD_DRG.DU15_group(record)){
+                return "DU15";
             }
 
             return "DU1";

@@ -18,12 +18,12 @@ public class QB1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合QB1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCQ_DRG.QB15_group(record)){
-                return "QB15";
-            }
-    
             if (MDCQ_DRG.QB1A_group(record)){
                 return "QB1A";
+            }
+    
+            if (MDCQ_DRG.QB15_group(record)){
+                return "QB15";
             }
 
             return "QB1";

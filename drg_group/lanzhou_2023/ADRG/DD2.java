@@ -18,12 +18,12 @@ public class DD2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合DD2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCD_DRG.DD25_group(record)){
-                return "DD25";
-            }
-    
             if (MDCD_DRG.DD2A_group(record)){
                 return "DD2A";
+            }
+    
+            if (MDCD_DRG.DD25_group(record)){
+                return "DD25";
             }
 
             return "DD2";

@@ -18,12 +18,12 @@ public class JT1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合JT1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCJ_DRG.JT15_group(record)){
-                return "JT15";
-            }
-    
             if (MDCJ_DRG.JT1A_group(record)){
                 return "JT1A";
+            }
+    
+            if (MDCJ_DRG.JT15_group(record)){
+                return "JT15";
             }
 
             return "JT1";

@@ -18,12 +18,12 @@ public class CV1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合CV1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCC_DRG.CV15_group(record)){
-                return "CV15";
-            }
-    
             if (MDCC_DRG.CV1A_group(record)){
                 return "CV1A";
+            }
+    
+            if (MDCC_DRG.CV15_group(record)){
+                return "CV15";
             }
 
             return "CV1";

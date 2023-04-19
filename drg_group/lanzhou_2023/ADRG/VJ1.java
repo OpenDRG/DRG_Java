@@ -18,12 +18,12 @@ public class VJ1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合VJ1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCV_DRG.VJ1B_group(record)){
-                return "VJ1B";
-            }
-    
             if (MDCV_DRG.VJ11_group(record)){
                 return "VJ11";
+            }
+    
+            if (MDCV_DRG.VJ1B_group(record)){
+                return "VJ1B";
             }
 
             return "VJ1";

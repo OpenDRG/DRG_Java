@@ -18,16 +18,16 @@ public class GK2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GK2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCG_DRG.GK25_group(record)){
-                return "GK25";
-            }
-    
             if (MDCG_DRG.GK21_group(record)){
                 return "GK21";
             }
     
             if (MDCG_DRG.GK23_group(record)){
                 return "GK23";
+            }
+    
+            if (MDCG_DRG.GK25_group(record)){
+                return "GK25";
             }
 
             return "GK2";

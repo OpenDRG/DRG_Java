@@ -18,16 +18,16 @@ public class HT2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HT2入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCH_DRG.HT21_group(record)){
+                return "HT21";
+            }
+    
             if (MDCH_DRG.HT23_group(record)){
                 return "HT23";
             }
     
             if (MDCH_DRG.HT25_group(record)){
                 return "HT25";
-            }
-    
-            if (MDCH_DRG.HT21_group(record)){
-                return "HT21";
             }
 
             return "HT2";

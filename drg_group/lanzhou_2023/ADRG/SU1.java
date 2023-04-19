@@ -18,24 +18,24 @@ public class SU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合SU1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCS_DRG.SU1AA_group(record)){
-                return "SU1AA";
+            if (MDCS_DRG.SU11B_group(record)){
+                return "SU11B";
             }
     
-            if (MDCS_DRG.SU15A_group(record)){
-                return "SU15A";
+            if (MDCS_DRG.SU1AA_group(record)){
+                return "SU1AA";
             }
     
             if (MDCS_DRG.SU13B_group(record)){
                 return "SU13B";
             }
     
-            if (MDCS_DRG.SU15B_group(record)){
-                return "SU15B";
+            if (MDCS_DRG.SU15A_group(record)){
+                return "SU15A";
             }
     
-            if (MDCS_DRG.SU11B_group(record)){
-                return "SU11B";
+            if (MDCS_DRG.SU15B_group(record)){
+                return "SU15B";
             }
 
             return "SU1";

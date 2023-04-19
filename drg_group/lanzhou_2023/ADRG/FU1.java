@@ -18,12 +18,12 @@ public class FU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FU1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCF_DRG.FU1B_group(record)){
-                return "FU1B";
-            }
-    
             if (MDCF_DRG.FU11_group(record)){
                 return "FU11";
+            }
+    
+            if (MDCF_DRG.FU1B_group(record)){
+                return "FU1B";
             }
 
             return "FU1";

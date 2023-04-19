@@ -18,12 +18,12 @@ public class CD2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合CD2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCC_DRG.CD25_group(record)){
-                return "CD25";
-            }
-    
             if (MDCC_DRG.CD2A_group(record)){
                 return "CD2A";
+            }
+    
+            if (MDCC_DRG.CD25_group(record)){
+                return "CD25";
             }
 
             return "CD2";

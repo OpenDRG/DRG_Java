@@ -18,16 +18,16 @@ public class IZ2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IZ2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCI_DRG.IZ25_group(record)){
-                return "IZ25";
+            if (MDCI_DRG.IZ21_group(record)){
+                return "IZ21";
             }
     
             if (MDCI_DRG.IZ23_group(record)){
                 return "IZ23";
             }
     
-            if (MDCI_DRG.IZ21_group(record)){
-                return "IZ21";
+            if (MDCI_DRG.IZ25_group(record)){
+                return "IZ25";
             }
 
             return "IZ2";

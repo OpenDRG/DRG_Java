@@ -18,12 +18,12 @@ public class HC2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HC2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCH_DRG.HC25_group(record)){
-                return "HC25";
-            }
-    
             if (MDCH_DRG.HC2A_group(record)){
                 return "HC2A";
+            }
+    
+            if (MDCH_DRG.HC25_group(record)){
+                return "HC25";
             }
 
             return "HC2";

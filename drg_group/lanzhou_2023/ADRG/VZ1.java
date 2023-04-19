@@ -18,12 +18,12 @@ public class VZ1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合VZ1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCV_DRG.VZ1B_group(record)){
-                return "VZ1B";
-            }
-    
             if (MDCV_DRG.VZ11_group(record)){
                 return "VZ11";
+            }
+    
+            if (MDCV_DRG.VZ1B_group(record)){
+                return "VZ1B";
             }
 
             return "VZ1";

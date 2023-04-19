@@ -18,16 +18,16 @@ public class KZ1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合KZ1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCK_DRG.KZ15_group(record)){
-                return "KZ15";
+            if (MDCK_DRG.KZ11_group(record)){
+                return "KZ11";
             }
     
             if (MDCK_DRG.KZ13_group(record)){
                 return "KZ13";
             }
     
-            if (MDCK_DRG.KZ11_group(record)){
-                return "KZ11";
+            if (MDCK_DRG.KZ15_group(record)){
+                return "KZ15";
             }
 
             return "KZ1";

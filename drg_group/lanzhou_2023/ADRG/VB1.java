@@ -18,12 +18,12 @@ public class VB1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合VB1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCV_DRG.VB15_group(record)){
-                return "VB15";
-            }
-    
             if (MDCV_DRG.VB1A_group(record)){
                 return "VB1A";
+            }
+    
+            if (MDCV_DRG.VB15_group(record)){
+                return "VB15";
             }
 
             return "VB1";

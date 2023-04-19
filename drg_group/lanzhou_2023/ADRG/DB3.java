@@ -18,12 +18,12 @@ public class DB3 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合DB3入组条件，匹配规则：主手术匹配");
                 
-            if (MDCD_DRG.DB35_group(record)){
-                return "DB35";
-            }
-    
             if (MDCD_DRG.DB3A_group(record)){
                 return "DB3A";
+            }
+    
+            if (MDCD_DRG.DB35_group(record)){
+                return "DB35";
             }
 
             return "DB3";

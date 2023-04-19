@@ -18,12 +18,12 @@ public class GF1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GF1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCG_DRG.GF15_group(record)){
-                return "GF15";
-            }
-    
             if (MDCG_DRG.GF1A_group(record)){
                 return "GF1A";
+            }
+    
+            if (MDCG_DRG.GF15_group(record)){
+                return "GF15";
             }
 
             return "GF1";

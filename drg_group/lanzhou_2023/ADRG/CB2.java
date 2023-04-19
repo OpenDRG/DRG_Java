@@ -18,12 +18,12 @@ public class CB2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合CB2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCC_DRG.CB25_group(record)){
-                return "CB25";
-            }
-    
             if (MDCC_DRG.CB2A_group(record)){
                 return "CB2A";
+            }
+    
+            if (MDCC_DRG.CB25_group(record)){
+                return "CB25";
             }
 
             return "CB2";

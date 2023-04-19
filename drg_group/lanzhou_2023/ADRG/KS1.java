@@ -22,12 +22,12 @@ public class KS1 {
                 return "KS11";
             }
     
-            if (MDCK_DRG.KS15_group(record)){
-                return "KS15";
-            }
-    
             if (MDCK_DRG.KS13_group(record)){
                 return "KS13";
+            }
+    
+            if (MDCK_DRG.KS15_group(record)){
+                return "KS15";
             }
 
             return "KS1";

@@ -18,12 +18,12 @@ public class HZ3 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HZ3入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCH_DRG.HZ3B_group(record)){
-                return "HZ3B";
-            }
-    
             if (MDCH_DRG.HZ31_group(record)){
                 return "HZ31";
+            }
+    
+            if (MDCH_DRG.HZ3B_group(record)){
+                return "HZ3B";
             }
 
             return "HZ3";

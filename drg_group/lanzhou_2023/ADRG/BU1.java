@@ -18,12 +18,12 @@ public class BU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BU1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCB_DRG.BU1B_group(record)){
-                return "BU1B";
-            }
-    
             if (MDCB_DRG.BU11_group(record)){
                 return "BU11";
+            }
+    
+            if (MDCB_DRG.BU1B_group(record)){
+                return "BU1B";
             }
 
             return "BU1";

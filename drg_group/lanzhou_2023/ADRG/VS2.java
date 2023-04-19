@@ -18,12 +18,12 @@ public class VS2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合VS2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCV_DRG.VS2B_group(record)){
-                return "VS2B";
-            }
-    
             if (MDCV_DRG.VS21_group(record)){
                 return "VS21";
+            }
+    
+            if (MDCV_DRG.VS2B_group(record)){
+                return "VS2B";
             }
 
             return "VS2";

@@ -18,12 +18,12 @@ public class HS2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HS2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCH_DRG.HS23_group(record)){
-                return "HS23";
-            }
-    
             if (MDCH_DRG.HS21_group(record)){
                 return "HS21";
+            }
+    
+            if (MDCH_DRG.HS23_group(record)){
+                return "HS23";
             }
     
             if (MDCH_DRG.HS25_group(record)){

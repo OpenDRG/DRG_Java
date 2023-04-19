@@ -18,16 +18,16 @@ public class GC2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GC2入组条件，匹配规则：主手术匹配");
                 
+            if (MDCG_DRG.GC21_group(record)){
+                return "GC21";
+            }
+    
             if (MDCG_DRG.GC23_group(record)){
                 return "GC23";
             }
     
             if (MDCG_DRG.GC25_group(record)){
                 return "GC25";
-            }
-    
-            if (MDCG_DRG.GC21_group(record)){
-                return "GC21";
             }
 
             return "GC2";

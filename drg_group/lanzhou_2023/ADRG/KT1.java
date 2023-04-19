@@ -18,24 +18,24 @@ public class KT1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合KT1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCK_DRG.KT15A_group(record)){
-                return "KT15A";
-            }
-    
-            if (MDCK_DRG.KT15B_group(record)){
-                return "KT15B";
-            }
-    
-            if (MDCK_DRG.KT13B_group(record)){
-                return "KT13B";
-            }
-    
             if (MDCK_DRG.KT11B_group(record)){
                 return "KT11B";
             }
     
             if (MDCK_DRG.KT1AA_group(record)){
                 return "KT1AA";
+            }
+    
+            if (MDCK_DRG.KT13B_group(record)){
+                return "KT13B";
+            }
+    
+            if (MDCK_DRG.KT15A_group(record)){
+                return "KT15A";
+            }
+    
+            if (MDCK_DRG.KT15B_group(record)){
+                return "KT15B";
             }
 
             return "KT1";

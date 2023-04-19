@@ -18,12 +18,12 @@ public class QR1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合QR1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCQ_DRG.QR1B_group(record)){
-                return "QR1B";
-            }
-    
             if (MDCQ_DRG.QR11_group(record)){
                 return "QR11";
+            }
+    
+            if (MDCQ_DRG.QR1B_group(record)){
+                return "QR1B";
             }
 
             return "QR1";

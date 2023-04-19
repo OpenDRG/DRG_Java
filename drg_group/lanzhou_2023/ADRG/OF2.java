@@ -18,12 +18,12 @@ public class OF2 {
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合OF2入组条件，匹配规则：主诊断匹配、主手术匹配");
                 
-            if (MDCO_DRG.OF25_group(record)){
-                return "OF25";
-            }
-    
             if (MDCO_DRG.OF2A_group(record)){
                 return "OF2A";
+            }
+    
+            if (MDCO_DRG.OF25_group(record)){
+                return "OF25";
             }
 
             return "OF2";

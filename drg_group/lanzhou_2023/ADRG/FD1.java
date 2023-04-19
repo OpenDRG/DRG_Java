@@ -18,16 +18,16 @@ public class FD1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FD1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCF_DRG.FD15_group(record)){
-                return "FD15";
-            }
-    
             if (MDCF_DRG.FD11_group(record)){
                 return "FD11";
             }
     
             if (MDCF_DRG.FD13_group(record)){
                 return "FD13";
+            }
+    
+            if (MDCF_DRG.FD15_group(record)){
+                return "FD15";
             }
 
             return "FD1";

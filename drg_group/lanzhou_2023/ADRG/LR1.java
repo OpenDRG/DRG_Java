@@ -18,12 +18,12 @@ public class LR1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合LR1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCL_DRG.LR1B_group(record)){
-                return "LR1B";
-            }
-    
             if (MDCL_DRG.LR11_group(record)){
                 return "LR11";
+            }
+    
+            if (MDCL_DRG.LR1B_group(record)){
+                return "LR1B";
             }
 
             return "LR1";

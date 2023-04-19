@@ -18,16 +18,16 @@ public class BY2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BY2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCB_DRG.BY25_group(record)){
-                return "BY25";
+            if (MDCB_DRG.BY21_group(record)){
+                return "BY21";
             }
     
             if (MDCB_DRG.BY23_group(record)){
                 return "BY23";
             }
     
-            if (MDCB_DRG.BY21_group(record)){
-                return "BY21";
+            if (MDCB_DRG.BY25_group(record)){
+                return "BY25";
             }
 
             return "BY2";

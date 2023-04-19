@@ -18,16 +18,16 @@ public class IT2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IT2入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCI_DRG.IT21_group(record)){
+                return "IT21";
+            }
+    
             if (MDCI_DRG.IT23_group(record)){
                 return "IT23";
             }
     
             if (MDCI_DRG.IT25_group(record)){
                 return "IT25";
-            }
-    
-            if (MDCI_DRG.IT21_group(record)){
-                return "IT21";
             }
 
             return "IT2";

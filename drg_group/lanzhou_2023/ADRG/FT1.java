@@ -22,12 +22,12 @@ public class FT1 {
                 return "FT11";
             }
     
-            if (MDCF_DRG.FT15_group(record)){
-                return "FT15";
-            }
-    
             if (MDCF_DRG.FT13_group(record)){
                 return "FT13";
+            }
+    
+            if (MDCF_DRG.FT15_group(record)){
+                return "FT15";
             }
 
             return "FT1";

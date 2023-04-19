@@ -18,12 +18,12 @@ public class IU2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IU2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCI_DRG.IU25_group(record)){
-                return "IU25";
-            }
-    
             if (MDCI_DRG.IU2A_group(record)){
                 return "IU2A";
+            }
+    
+            if (MDCI_DRG.IU25_group(record)){
+                return "IU25";
             }
 
             return "IU2";

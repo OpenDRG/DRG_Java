@@ -18,12 +18,12 @@ public class CC1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合CC1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCC_DRG.CC15_group(record)){
-                return "CC15";
-            }
-    
             if (MDCC_DRG.CC1A_group(record)){
                 return "CC1A";
+            }
+    
+            if (MDCC_DRG.CC15_group(record)){
+                return "CC15";
             }
 
             return "CC1";

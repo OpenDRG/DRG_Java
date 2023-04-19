@@ -18,16 +18,16 @@ public class XR2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合XR2入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCX_DRG.XR21_group(record)){
+                return "XR21";
+            }
+    
             if (MDCX_DRG.XR23_group(record)){
                 return "XR23";
             }
     
             if (MDCX_DRG.XR25_group(record)){
                 return "XR25";
-            }
-    
-            if (MDCX_DRG.XR21_group(record)){
-                return "XR21";
             }
 
             return "XR2";

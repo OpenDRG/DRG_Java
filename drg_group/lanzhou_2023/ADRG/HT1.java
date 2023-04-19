@@ -18,12 +18,12 @@ public class HT1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HT1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCH_DRG.HT1B_group(record)){
-                return "HT1B";
-            }
-    
             if (MDCH_DRG.HT11_group(record)){
                 return "HT11";
+            }
+    
+            if (MDCH_DRG.HT1B_group(record)){
+                return "HT1B";
             }
 
             return "HT1";

@@ -18,16 +18,16 @@ public class QS3 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合QS3入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCQ_DRG.QS31_group(record)){
+                return "QS31";
+            }
+    
             if (MDCQ_DRG.QS33_group(record)){
                 return "QS33";
             }
     
             if (MDCQ_DRG.QS35_group(record)){
                 return "QS35";
-            }
-    
-            if (MDCQ_DRG.QS31_group(record)){
-                return "QS31";
             }
 
             return "QS3";

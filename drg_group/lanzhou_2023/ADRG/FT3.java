@@ -18,12 +18,12 @@ public class FT3 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FT3入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCF_DRG.FT3B_group(record)){
-                return "FT3B";
-            }
-    
             if (MDCF_DRG.FT31_group(record)){
                 return "FT31";
+            }
+    
+            if (MDCF_DRG.FT3B_group(record)){
+                return "FT3B";
             }
 
             return "FT3";

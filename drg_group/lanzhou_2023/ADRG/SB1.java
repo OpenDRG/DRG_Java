@@ -18,12 +18,12 @@ public class SB1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(Base.SS_VALID,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合SB1入组条件，匹配规则：存在手术");
                 
-            if (MDCS_DRG.SB1B_group(record)){
-                return "SB1B";
-            }
-    
             if (MDCS_DRG.SB11_group(record)){
                 return "SB11";
+            }
+    
+            if (MDCS_DRG.SB1B_group(record)){
+                return "SB1B";
             }
 
             return "SB1";

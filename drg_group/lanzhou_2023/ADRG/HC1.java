@@ -18,16 +18,16 @@ public class HC1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HC1入组条件，匹配规则：主手术匹配");
                 
+            if (MDCH_DRG.HC11_group(record)){
+                return "HC11";
+            }
+    
             if (MDCH_DRG.HC13_group(record)){
                 return "HC13";
             }
     
             if (MDCH_DRG.HC15_group(record)){
                 return "HC15";
-            }
-    
-            if (MDCH_DRG.HC11_group(record)){
-                return "HC11";
             }
 
             return "HC1";

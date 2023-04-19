@@ -18,12 +18,12 @@ public class PR1 {
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ageDay<=28){
             Base.groupMessages.putMessage(record.Index,"符合PR1入组条件，匹配规则：主诊断匹配、新生儿");
                 
-            if (MDCP_DRG.PR1B_group(record)){
-                return "PR1B";
-            }
-    
             if (MDCP_DRG.PR11_group(record)){
                 return "PR11";
+            }
+    
+            if (MDCP_DRG.PR1B_group(record)){
+                return "PR1B";
             }
 
             return "PR1";

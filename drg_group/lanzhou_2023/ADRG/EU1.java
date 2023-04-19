@@ -18,16 +18,16 @@ public class EU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合EU1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCE_DRG.EU15_group(record)){
-                return "EU15";
+            if (MDCE_DRG.EU11_group(record)){
+                return "EU11";
             }
     
             if (MDCE_DRG.EU13_group(record)){
                 return "EU13";
             }
     
-            if (MDCE_DRG.EU11_group(record)){
-                return "EU11";
+            if (MDCE_DRG.EU15_group(record)){
+                return "EU15";
             }
 
             return "EU1";

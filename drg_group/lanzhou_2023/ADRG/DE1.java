@@ -18,12 +18,12 @@ public class DE1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合DE1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCD_DRG.DE15_group(record)){
-                return "DE15";
-            }
-    
             if (MDCD_DRG.DE1A_group(record)){
                 return "DE1A";
+            }
+    
+            if (MDCD_DRG.DE15_group(record)){
+                return "DE15";
             }
 
             return "DE1";

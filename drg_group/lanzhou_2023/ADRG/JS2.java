@@ -18,12 +18,12 @@ public class JS2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合JS2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCJ_DRG.JS25_group(record)){
-                return "JS25";
-            }
-    
             if (MDCJ_DRG.JS2A_group(record)){
                 return "JS2A";
+            }
+    
+            if (MDCJ_DRG.JS25_group(record)){
+                return "JS25";
             }
 
             return "JS2";

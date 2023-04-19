@@ -18,12 +18,12 @@ public class ZC1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合ZC1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCZ_DRG.ZC1B_group(record)){
-                return "ZC1B";
-            }
-    
             if (MDCZ_DRG.ZC11_group(record)){
                 return "ZC11";
+            }
+    
+            if (MDCZ_DRG.ZC1B_group(record)){
+                return "ZC1B";
             }
 
             return "ZC1";

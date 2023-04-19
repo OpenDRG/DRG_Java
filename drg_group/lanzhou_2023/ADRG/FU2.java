@@ -18,16 +18,16 @@ public class FU2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FU2入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCF_DRG.FU21_group(record)){
+                return "FU21";
+            }
+    
             if (MDCF_DRG.FU23_group(record)){
                 return "FU23";
             }
     
             if (MDCF_DRG.FU25_group(record)){
                 return "FU25";
-            }
-    
-            if (MDCF_DRG.FU21_group(record)){
-                return "FU21";
             }
 
             return "FU2";

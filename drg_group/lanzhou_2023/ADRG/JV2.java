@@ -18,12 +18,12 @@ public class JV2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合JV2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCJ_DRG.JV25_group(record)){
-                return "JV25";
-            }
-    
             if (MDCJ_DRG.JV2A_group(record)){
                 return "JV2A";
+            }
+    
+            if (MDCJ_DRG.JV25_group(record)){
+                return "JV25";
             }
 
             return "JV2";

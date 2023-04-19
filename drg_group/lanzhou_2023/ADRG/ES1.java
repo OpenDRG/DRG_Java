@@ -18,16 +18,16 @@ public class ES1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合ES1入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCE_DRG.ES11_group(record)){
+                return "ES11";
+            }
+    
             if (MDCE_DRG.ES13_group(record)){
                 return "ES13";
             }
     
             if (MDCE_DRG.ES15_group(record)){
                 return "ES15";
-            }
-    
-            if (MDCE_DRG.ES11_group(record)){
-                return "ES11";
             }
 
             return "ES1";

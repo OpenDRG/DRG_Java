@@ -18,12 +18,12 @@ public class FL2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FL2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCF_DRG.FL25_group(record)){
-                return "FL25";
-            }
-    
             if (MDCF_DRG.FL2A_group(record)){
                 return "FL2A";
+            }
+    
+            if (MDCF_DRG.FL25_group(record)){
+                return "FL25";
             }
 
             return "FL2";

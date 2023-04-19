@@ -18,16 +18,16 @@ public class XT3 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合XT3入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCX_DRG.XT35_group(record)){
-                return "XT35";
+            if (MDCX_DRG.XT31_group(record)){
+                return "XT31";
             }
     
             if (MDCX_DRG.XT33_group(record)){
                 return "XT33";
             }
     
-            if (MDCX_DRG.XT31_group(record)){
-                return "XT31";
+            if (MDCX_DRG.XT35_group(record)){
+                return "XT35";
             }
 
             return "XT3";

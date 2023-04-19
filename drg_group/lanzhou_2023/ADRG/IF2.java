@@ -18,12 +18,12 @@ public class IF2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IF2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCI_DRG.IF25_group(record)){
-                return "IF25";
-            }
-    
             if (MDCI_DRG.IF2A_group(record)){
                 return "IF2A";
+            }
+    
+            if (MDCI_DRG.IF25_group(record)){
+                return "IF25";
             }
 
             return "IF2";

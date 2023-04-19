@@ -18,16 +18,16 @@ public class GV1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GV1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCG_DRG.GV15_group(record)){
-                return "GV15";
+            if (MDCG_DRG.GV11_group(record)){
+                return "GV11";
             }
     
             if (MDCG_DRG.GV13_group(record)){
                 return "GV13";
             }
     
-            if (MDCG_DRG.GV11_group(record)){
-                return "GV11";
+            if (MDCG_DRG.GV15_group(record)){
+                return "GV15";
             }
 
             return "GV1";

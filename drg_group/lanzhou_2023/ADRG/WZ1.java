@@ -18,12 +18,12 @@ public class WZ1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合WZ1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCW_DRG.WZ1B_group(record)){
-                return "WZ1B";
-            }
-    
             if (MDCW_DRG.WZ11_group(record)){
                 return "WZ11";
+            }
+    
+            if (MDCW_DRG.WZ1B_group(record)){
+                return "WZ1B";
             }
 
             return "WZ1";

@@ -18,12 +18,12 @@ public class PV1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合PV1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCP_DRG.PV15_group(record)){
-                return "PV15";
-            }
-    
             if (MDCP_DRG.PV1A_group(record)){
                 return "PV1A";
+            }
+    
+            if (MDCP_DRG.PV15_group(record)){
+                return "PV15";
             }
 
             return "PV1";

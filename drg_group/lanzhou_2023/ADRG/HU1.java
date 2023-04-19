@@ -18,16 +18,16 @@ public class HU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HU1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCH_DRG.HU15_group(record)){
-                return "HU15";
+            if (MDCH_DRG.HU11_group(record)){
+                return "HU11";
             }
     
             if (MDCH_DRG.HU13_group(record)){
                 return "HU13";
             }
     
-            if (MDCH_DRG.HU11_group(record)){
-                return "HU11";
+            if (MDCH_DRG.HU15_group(record)){
+                return "HU15";
             }
 
             return "HU1";

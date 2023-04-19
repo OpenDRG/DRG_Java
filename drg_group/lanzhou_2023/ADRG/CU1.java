@@ -18,12 +18,12 @@ public class CU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合CU1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCC_DRG.CU15_group(record)){
-                return "CU15";
-            }
-    
             if (MDCC_DRG.CU1A_group(record)){
                 return "CU1A";
+            }
+    
+            if (MDCC_DRG.CU15_group(record)){
+                return "CU15";
             }
 
             return "CU1";

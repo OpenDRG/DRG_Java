@@ -18,16 +18,16 @@ public class UR1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合UR1入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCU_DRG.UR11_group(record)){
+                return "UR11";
+            }
+    
             if (MDCU_DRG.UR13_group(record)){
                 return "UR13";
             }
     
             if (MDCU_DRG.UR15_group(record)){
                 return "UR15";
-            }
-    
-            if (MDCU_DRG.UR11_group(record)){
-                return "UR11";
             }
 
             return "UR1";

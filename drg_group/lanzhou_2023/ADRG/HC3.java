@@ -22,12 +22,12 @@ public class HC3 {
                 return "HC31";
             }
     
-            if (MDCH_DRG.HC35_group(record)){
-                return "HC35";
-            }
-    
             if (MDCH_DRG.HC33_group(record)){
                 return "HC33";
+            }
+    
+            if (MDCH_DRG.HC35_group(record)){
+                return "HC35";
             }
 
             return "HC3";

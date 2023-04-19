@@ -18,12 +18,12 @@ public class CW1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合CW1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCC_DRG.CW15_group(record)){
-                return "CW15";
-            }
-    
             if (MDCC_DRG.CW1A_group(record)){
                 return "CW1A";
+            }
+    
+            if (MDCC_DRG.CW15_group(record)){
+                return "CW15";
             }
 
             return "CW1";

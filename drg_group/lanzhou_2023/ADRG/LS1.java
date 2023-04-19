@@ -22,12 +22,12 @@ public class LS1 {
                 return "LS11";
             }
     
-            if (MDCL_DRG.LS15_group(record)){
-                return "LS15";
-            }
-    
             if (MDCL_DRG.LS13_group(record)){
                 return "LS13";
+            }
+    
+            if (MDCL_DRG.LS15_group(record)){
+                return "LS15";
             }
 
             return "LS1";

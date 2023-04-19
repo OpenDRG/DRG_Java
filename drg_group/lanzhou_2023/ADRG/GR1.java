@@ -18,12 +18,12 @@ public class GR1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GR1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCG_DRG.GR1B_group(record)){
-                return "GR1B";
-            }
-    
             if (MDCG_DRG.GR11_group(record)){
                 return "GR11";
+            }
+    
+            if (MDCG_DRG.GR1B_group(record)){
+                return "GR1B";
             }
 
             return "GR1";

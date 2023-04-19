@@ -22,12 +22,12 @@ public class BY1 {
                 return "BY11";
             }
     
-            if (MDCB_DRG.BY15_group(record)){
-                return "BY15";
-            }
-    
             if (MDCB_DRG.BY13_group(record)){
                 return "BY13";
+            }
+    
+            if (MDCB_DRG.BY15_group(record)){
+                return "BY15";
             }
 
             return "BY1";

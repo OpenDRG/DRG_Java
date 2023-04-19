@@ -18,12 +18,12 @@ public class WJ1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(Base.SS_VALID,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合WJ1入组条件，匹配规则：存在手术");
                 
-            if (MDCW_DRG.WJ1B_group(record)){
-                return "WJ1B";
-            }
-    
             if (MDCW_DRG.WJ11_group(record)){
                 return "WJ11";
+            }
+    
+            if (MDCW_DRG.WJ1B_group(record)){
+                return "WJ1B";
             }
 
             return "WJ1";

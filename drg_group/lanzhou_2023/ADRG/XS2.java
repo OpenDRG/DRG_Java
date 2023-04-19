@@ -18,16 +18,16 @@ public class XS2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合XS2入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCX_DRG.XS21_group(record)){
+                return "XS21";
+            }
+    
             if (MDCX_DRG.XS23_group(record)){
                 return "XS23";
             }
     
             if (MDCX_DRG.XS25_group(record)){
                 return "XS25";
-            }
-    
-            if (MDCX_DRG.XS21_group(record)){
-                return "XS21";
             }
 
             return "XS2";

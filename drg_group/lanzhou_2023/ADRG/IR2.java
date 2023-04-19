@@ -18,16 +18,16 @@ public class IR2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IR2入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCI_DRG.IR21_group(record)){
+                return "IR21";
+            }
+    
             if (MDCI_DRG.IR23_group(record)){
                 return "IR23";
             }
     
             if (MDCI_DRG.IR25_group(record)){
                 return "IR25";
-            }
-    
-            if (MDCI_DRG.IR21_group(record)){
-                return "IR21";
             }
 
             return "IR2";

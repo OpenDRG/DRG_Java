@@ -18,12 +18,12 @@ public class TR1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合TR1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCT_DRG.TR15_group(record)){
-                return "TR15";
-            }
-    
             if (MDCT_DRG.TR1A_group(record)){
                 return "TR1A";
+            }
+    
+            if (MDCT_DRG.TR15_group(record)){
+                return "TR15";
             }
 
             return "TR1";

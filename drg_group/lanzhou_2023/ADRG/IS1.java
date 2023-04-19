@@ -18,12 +18,12 @@ public class IS1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IS1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCI_DRG.IS15_group(record)){
-                return "IS15";
-            }
-    
             if (MDCI_DRG.IS1A_group(record)){
                 return "IS1A";
+            }
+    
+            if (MDCI_DRG.IS15_group(record)){
+                return "IS15";
             }
 
             return "IS1";

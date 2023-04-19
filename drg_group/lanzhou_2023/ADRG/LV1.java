@@ -18,12 +18,12 @@ public class LV1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合LV1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCL_DRG.LV1B_group(record)){
-                return "LV1B";
-            }
-    
             if (MDCL_DRG.LV11_group(record)){
                 return "LV11";
+            }
+    
+            if (MDCL_DRG.LV1B_group(record)){
+                return "LV1B";
             }
 
             return "LV1";

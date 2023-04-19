@@ -18,16 +18,16 @@ public class LW1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合LW1入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCL_DRG.LW11_group(record)){
+                return "LW11";
+            }
+    
             if (MDCL_DRG.LW13_group(record)){
                 return "LW13";
             }
     
             if (MDCL_DRG.LW15_group(record)){
                 return "LW15";
-            }
-    
-            if (MDCL_DRG.LW11_group(record)){
-                return "LW11";
             }
 
             return "LW1";

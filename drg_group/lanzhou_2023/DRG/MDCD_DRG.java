@@ -151,4 +151,20 @@ public class MDCD_DRG {
         return true;
     }
 
+    public static boolean DT1AA_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length))) && record.age<14;
+    }
+
+    public static boolean DT15A_group(MedicalRecord record){
+        return record.age<14;
+    }
+
+    public static boolean DT1AB_group(MedicalRecord record){
+        return record.zdList.length>1 && (Base.has_mcc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)) || Base.has_cc(record.Index,record.zdList[0],Arrays.copyOfRange(record.zdList,1,record.zdList.length)));
+    }
+
+    public static boolean DT15B_group(MedicalRecord record){
+        return true;
+    }
+
 }

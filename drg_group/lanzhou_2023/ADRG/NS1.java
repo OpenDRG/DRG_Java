@@ -18,12 +18,12 @@ public class NS1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合NS1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCN_DRG.NS15_group(record)){
-                return "NS15";
-            }
-    
             if (MDCN_DRG.NS1A_group(record)){
                 return "NS1A";
+            }
+    
+            if (MDCN_DRG.NS15_group(record)){
+                return "NS15";
             }
 
             return "NS1";

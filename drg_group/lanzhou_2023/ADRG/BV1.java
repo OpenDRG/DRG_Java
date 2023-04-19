@@ -18,24 +18,24 @@ public class BV1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BV1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCB_DRG.BV15A_group(record)){
-                return "BV15A";
+            if (MDCB_DRG.BV11B_group(record)){
+                return "BV11B";
             }
     
             if (MDCB_DRG.BV1AA_group(record)){
                 return "BV1AA";
             }
     
-            if (MDCB_DRG.BV11B_group(record)){
-                return "BV11B";
+            if (MDCB_DRG.BV13B_group(record)){
+                return "BV13B";
+            }
+    
+            if (MDCB_DRG.BV15A_group(record)){
+                return "BV15A";
             }
     
             if (MDCB_DRG.BV15B_group(record)){
                 return "BV15B";
-            }
-    
-            if (MDCB_DRG.BV13B_group(record)){
-                return "BV13B";
             }
 
             return "BV1";

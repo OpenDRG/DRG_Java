@@ -18,16 +18,16 @@ public class BV2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BV2入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCB_DRG.BV21_group(record)){
+                return "BV21";
+            }
+    
             if (MDCB_DRG.BV23_group(record)){
                 return "BV23";
             }
     
             if (MDCB_DRG.BV25_group(record)){
                 return "BV25";
-            }
-    
-            if (MDCB_DRG.BV21_group(record)){
-                return "BV21";
             }
 
             return "BV2";

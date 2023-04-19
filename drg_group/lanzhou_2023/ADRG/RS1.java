@@ -18,12 +18,12 @@ public class RS1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合RS1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCR_DRG.RS1B_group(record)){
-                return "RS1B";
-            }
-    
             if (MDCR_DRG.RS11_group(record)){
                 return "RS11";
+            }
+    
+            if (MDCR_DRG.RS1B_group(record)){
+                return "RS1B";
             }
 
             return "RS1";

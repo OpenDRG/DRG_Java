@@ -18,16 +18,16 @@ public class IC4 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IC4入组条件，匹配规则：主手术匹配");
                 
+            if (MDCI_DRG.IC41_group(record)){
+                return "IC41";
+            }
+    
             if (MDCI_DRG.IC43_group(record)){
                 return "IC43";
             }
     
             if (MDCI_DRG.IC45_group(record)){
                 return "IC45";
-            }
-    
-            if (MDCI_DRG.IC41_group(record)){
-                return "IC41";
             }
 
             return "IC4";

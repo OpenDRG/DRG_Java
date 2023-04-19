@@ -18,16 +18,16 @@ public class HZ1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HZ1入组条件，匹配规则：主诊断匹配");
                 
+            if (MDCH_DRG.HZ11_group(record)){
+                return "HZ11";
+            }
+    
             if (MDCH_DRG.HZ13_group(record)){
                 return "HZ13";
             }
     
             if (MDCH_DRG.HZ15_group(record)){
                 return "HZ15";
-            }
-    
-            if (MDCH_DRG.HZ11_group(record)){
-                return "HZ11";
             }
 
             return "HZ1";

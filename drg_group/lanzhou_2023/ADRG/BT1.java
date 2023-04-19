@@ -18,16 +18,16 @@ public class BT1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BT1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCB_DRG.BT15_group(record)){
-                return "BT15";
+            if (MDCB_DRG.BT11_group(record)){
+                return "BT11";
             }
     
             if (MDCB_DRG.BT13_group(record)){
                 return "BT13";
             }
     
-            if (MDCB_DRG.BT11_group(record)){
-                return "BT11";
+            if (MDCB_DRG.BT15_group(record)){
+                return "BT15";
             }
 
             return "BT1";

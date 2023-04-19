@@ -18,12 +18,12 @@ public class GU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GU1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCG_DRG.GU13_group(record)){
-                return "GU13";
-            }
-    
             if (MDCG_DRG.GU11_group(record)){
                 return "GU11";
+            }
+    
+            if (MDCG_DRG.GU13_group(record)){
+                return "GU13";
             }
     
             if (MDCG_DRG.GU15_group(record)){

@@ -18,28 +18,28 @@ public class SV1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合SV1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCS_DRG.SV15A_group(record)){
-                return "SV15A";
-            }
-    
-            if (MDCS_DRG.SV13B_group(record)){
-                return "SV13B";
-            }
-    
-            if (MDCS_DRG.SV15B_group(record)){
-                return "SV15B";
-            }
-    
-            if (MDCS_DRG.SV13A_group(record)){
-                return "SV13A";
+            if (MDCS_DRG.SV11A_group(record)){
+                return "SV11A";
             }
     
             if (MDCS_DRG.SV11B_group(record)){
                 return "SV11B";
             }
     
-            if (MDCS_DRG.SV11A_group(record)){
-                return "SV11A";
+            if (MDCS_DRG.SV13A_group(record)){
+                return "SV13A";
+            }
+    
+            if (MDCS_DRG.SV13B_group(record)){
+                return "SV13B";
+            }
+    
+            if (MDCS_DRG.SV15A_group(record)){
+                return "SV15A";
+            }
+    
+            if (MDCS_DRG.SV15B_group(record)){
+                return "SV15B";
             }
 
             return "SV1";

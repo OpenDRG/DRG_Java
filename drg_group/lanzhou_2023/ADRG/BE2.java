@@ -18,12 +18,12 @@ public class BE2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BE2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCB_DRG.BE25_group(record)){
-                return "BE25";
-            }
-    
             if (MDCB_DRG.BE2A_group(record)){
                 return "BE2A";
+            }
+    
+            if (MDCB_DRG.BE25_group(record)){
+                return "BE25";
             }
 
             return "BE2";

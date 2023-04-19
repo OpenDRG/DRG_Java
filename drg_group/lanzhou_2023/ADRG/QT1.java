@@ -18,12 +18,12 @@ public class QT1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合QT1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCQ_DRG.QT13_group(record)){
-                return "QT13";
-            }
-    
             if (MDCQ_DRG.QT11_group(record)){
                 return "QT11";
+            }
+    
+            if (MDCQ_DRG.QT13_group(record)){
+                return "QT13";
             }
     
             if (MDCQ_DRG.QT15_group(record)){

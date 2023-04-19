@@ -173,7 +173,7 @@ public class GroupProxy {
         try{
             Files.write(Paths.get(filename.toString().replace(".csv", "_java_result.csv")),result,StandardCharsets.UTF_8,StandardOpenOption.CREATE_NEW);
         }catch(IOException e) {
-            System.out.println(String.format("文件写入失败%s", Paths.get(filename.toString().replace(".csv", "_result.csv"))));
+            System.out.println(String.format("文件写入失败%s", Paths.get(filename.toString().replace(".csv", "_java_result.csv"))));
             e.printStackTrace();
         }
     }

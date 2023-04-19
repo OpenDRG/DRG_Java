@@ -18,12 +18,12 @@ public class IF4 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IF4入组条件，匹配规则：主手术匹配");
                 
-            if (MDCI_DRG.IF45_group(record)){
-                return "IF45";
-            }
-    
             if (MDCI_DRG.IF4A_group(record)){
                 return "IF4A";
+            }
+    
+            if (MDCI_DRG.IF45_group(record)){
+                return "IF45";
             }
 
             return "IF4";

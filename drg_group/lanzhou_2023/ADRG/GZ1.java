@@ -18,12 +18,12 @@ public class GZ1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GZ1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCG_DRG.GZ15_group(record)){
-                return "GZ15";
-            }
-    
             if (MDCG_DRG.GZ1A_group(record)){
                 return "GZ1A";
+            }
+    
+            if (MDCG_DRG.GZ15_group(record)){
+                return "GZ15";
             }
 
             return "GZ1";

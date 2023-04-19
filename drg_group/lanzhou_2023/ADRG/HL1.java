@@ -18,12 +18,12 @@ public class HL1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HL1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCH_DRG.HL13_group(record)){
-                return "HL13";
-            }
-    
             if (MDCH_DRG.HL11_group(record)){
                 return "HL11";
+            }
+    
+            if (MDCH_DRG.HL13_group(record)){
+                return "HL13";
             }
     
             if (MDCH_DRG.HL15_group(record)){

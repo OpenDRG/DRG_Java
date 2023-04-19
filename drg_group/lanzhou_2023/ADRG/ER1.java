@@ -18,12 +18,12 @@ public class ER1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合ER1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCE_DRG.ER1B_group(record)){
-                return "ER1B";
-            }
-    
             if (MDCE_DRG.ER11_group(record)){
                 return "ER11";
+            }
+    
+            if (MDCE_DRG.ER1B_group(record)){
+                return "ER1B";
             }
 
             return "ER1";

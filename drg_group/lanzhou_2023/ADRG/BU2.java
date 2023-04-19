@@ -18,12 +18,12 @@ public class BU2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BU2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCB_DRG.BU2B_group(record)){
-                return "BU2B";
-            }
-    
             if (MDCB_DRG.BU21_group(record)){
                 return "BU21";
+            }
+    
+            if (MDCB_DRG.BU2B_group(record)){
+                return "BU2B";
             }
 
             return "BU2";

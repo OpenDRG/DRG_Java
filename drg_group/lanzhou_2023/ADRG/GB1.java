@@ -18,12 +18,12 @@ public class GB1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合GB1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCG_DRG.GB1B_group(record)){
-                return "GB1B";
-            }
-    
             if (MDCG_DRG.GB11_group(record)){
                 return "GB11";
+            }
+    
+            if (MDCG_DRG.GB1B_group(record)){
+                return "GB1B";
             }
 
             return "GB1";

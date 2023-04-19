@@ -18,12 +18,12 @@ public class IU3 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IU3入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCI_DRG.IU3B_group(record)){
-                return "IU3B";
-            }
-    
             if (MDCI_DRG.IU31_group(record)){
                 return "IU31";
+            }
+    
+            if (MDCI_DRG.IU3B_group(record)){
+                return "IU3B";
             }
 
             return "IU3";

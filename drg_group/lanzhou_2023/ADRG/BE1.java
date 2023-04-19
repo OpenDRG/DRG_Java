@@ -18,16 +18,16 @@ public class BE1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合BE1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCB_DRG.BE15_group(record)){
-                return "BE15";
+            if (MDCB_DRG.BE11_group(record)){
+                return "BE11";
             }
     
             if (MDCB_DRG.BE13_group(record)){
                 return "BE13";
             }
     
-            if (MDCB_DRG.BE11_group(record)){
-                return "BE11";
+            if (MDCB_DRG.BE15_group(record)){
+                return "BE15";
             }
 
             return "BE1";

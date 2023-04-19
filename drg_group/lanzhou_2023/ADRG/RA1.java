@@ -22,12 +22,12 @@ public class RA1 {
                 return "RA11";
             }
     
-            if (MDCR_DRG.RA15_group(record)){
-                return "RA15";
-            }
-    
             if (MDCR_DRG.RA13_group(record)){
                 return "RA13";
+            }
+    
+            if (MDCR_DRG.RA15_group(record)){
+                return "RA15";
             }
 
             return "RA1";

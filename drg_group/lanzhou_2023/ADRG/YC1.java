@@ -18,12 +18,12 @@ public class YC1 {
         if (true && Base.intersect(record.zdList,adrg_zd) && record.ssList!=null && record.ssList.length>0 && Base.contains(Base.SS_VALID,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合YC1入组条件，匹配规则：某一诊断匹配、存在手术");
                 
-            if (MDCY_DRG.YC15_group(record)){
-                return "YC15";
-            }
-    
             if (MDCY_DRG.YC11_group(record)){
                 return "YC11";
+            }
+    
+            if (MDCY_DRG.YC15_group(record)){
+                return "YC15";
             }
 
             return "YC1";

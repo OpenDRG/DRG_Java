@@ -18,10 +18,6 @@ public class ES3 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合ES3入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCE_DRG.ES33A_group(record)){
-                return "ES33A";
-            }
-    
             if (MDCE_DRG.ES31A_group(record)){
                 return "ES31A";
             }
@@ -30,16 +26,20 @@ public class ES3 {
                 return "ES31B";
             }
     
+            if (MDCE_DRG.ES33A_group(record)){
+                return "ES33A";
+            }
+    
+            if (MDCE_DRG.ES33B_group(record)){
+                return "ES33B";
+            }
+    
             if (MDCE_DRG.ES35A_group(record)){
                 return "ES35A";
             }
     
             if (MDCE_DRG.ES35B_group(record)){
                 return "ES35B";
-            }
-    
-            if (MDCE_DRG.ES33B_group(record)){
-                return "ES33B";
             }
 
             return "ES3";

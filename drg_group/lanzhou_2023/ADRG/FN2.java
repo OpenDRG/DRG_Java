@@ -18,16 +18,16 @@ public class FN2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FN2入组条件，匹配规则：主手术匹配");
                 
+            if (MDCF_DRG.FN21_group(record)){
+                return "FN21";
+            }
+    
             if (MDCF_DRG.FN23_group(record)){
                 return "FN23";
             }
     
             if (MDCF_DRG.FN25_group(record)){
                 return "FN25";
-            }
-    
-            if (MDCF_DRG.FN21_group(record)){
-                return "FN21";
             }
 
             return "FN2";

@@ -18,12 +18,12 @@ public class CT1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合CT1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCC_DRG.CT15_group(record)){
-                return "CT15";
-            }
-    
             if (MDCC_DRG.CT1A_group(record)){
                 return "CT1A";
+            }
+    
+            if (MDCC_DRG.CT15_group(record)){
+                return "CT15";
             }
 
             return "CT1";

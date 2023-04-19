@@ -18,12 +18,12 @@ public class RA2 {
         if (true && Base.contains(adrg_zd,record.zdList[0]) && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合RA2入组条件，匹配规则：主诊断匹配、主手术匹配");
                 
-            if (MDCR_DRG.RA23_group(record)){
-                return "RA23";
-            }
-    
             if (MDCR_DRG.RA21_group(record)){
                 return "RA21";
+            }
+    
+            if (MDCR_DRG.RA23_group(record)){
+                return "RA23";
             }
     
             if (MDCR_DRG.RA25_group(record)){

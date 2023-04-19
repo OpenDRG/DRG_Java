@@ -18,12 +18,12 @@ public class ES2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合ES2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCE_DRG.ES2B_group(record)){
-                return "ES2B";
-            }
-    
             if (MDCE_DRG.ES21_group(record)){
                 return "ES21";
+            }
+    
+            if (MDCE_DRG.ES2B_group(record)){
+                return "ES2B";
             }
 
             return "ES2";

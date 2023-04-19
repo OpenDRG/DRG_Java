@@ -18,16 +18,16 @@ public class HL2 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合HL2入组条件，匹配规则：主手术匹配");
                 
-            if (MDCH_DRG.HL25_group(record)){
-                return "HL25";
+            if (MDCH_DRG.HL21_group(record)){
+                return "HL21";
             }
     
             if (MDCH_DRG.HL23_group(record)){
                 return "HL23";
             }
     
-            if (MDCH_DRG.HL21_group(record)){
-                return "HL21";
+            if (MDCH_DRG.HL25_group(record)){
+                return "HL25";
             }
 
             return "HL2";

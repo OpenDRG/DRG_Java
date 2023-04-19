@@ -18,12 +18,12 @@ public class RW1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合RW1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCR_DRG.RW1B_group(record)){
-                return "RW1B";
-            }
-    
             if (MDCR_DRG.RW11_group(record)){
                 return "RW11";
+            }
+    
+            if (MDCR_DRG.RW1B_group(record)){
+                return "RW1B";
             }
 
             return "RW1";

@@ -18,16 +18,16 @@ public class IF1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合IF1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCI_DRG.IF15A_group(record)){
-                return "IF15A";
-            }
-    
             if (MDCI_DRG.IF1AA_group(record)){
                 return "IF1AA";
             }
     
             if (MDCI_DRG.IF1AB_group(record)){
                 return "IF1AB";
+            }
+    
+            if (MDCI_DRG.IF15A_group(record)){
+                return "IF15A";
             }
     
             if (MDCI_DRG.IF15B_group(record)){

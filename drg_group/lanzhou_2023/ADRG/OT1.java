@@ -18,16 +18,16 @@ public class OT1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合OT1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCO_DRG.OT15_group(record)){
-                return "OT15";
+            if (MDCO_DRG.OT11_group(record)){
+                return "OT11";
             }
     
             if (MDCO_DRG.OT13_group(record)){
                 return "OT13";
             }
     
-            if (MDCO_DRG.OT11_group(record)){
-                return "OT11";
+            if (MDCO_DRG.OT15_group(record)){
+                return "OT15";
             }
 
             return "OT1";

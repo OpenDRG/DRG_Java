@@ -18,12 +18,12 @@ public class FZ1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FZ1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCF_DRG.FZ1B_group(record)){
-                return "FZ1B";
-            }
-    
             if (MDCF_DRG.FZ11_group(record)){
                 return "FZ11";
+            }
+    
+            if (MDCF_DRG.FZ1B_group(record)){
+                return "FZ1B";
             }
 
             return "FZ1";
