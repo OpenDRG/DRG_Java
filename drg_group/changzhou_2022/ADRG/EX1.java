@@ -18,10 +18,6 @@ public class EX1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合EX1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCE_DRG.EX15_group(record)){
-                return "EX15";
-            }
-    
             if (MDCE_DRG.EX10_group(record)){
                 return "EX10";
             }
@@ -32,6 +28,10 @@ public class EX1 {
     
             if (MDCE_DRG.EX13_group(record)){
                 return "EX13";
+            }
+    
+            if (MDCE_DRG.EX15_group(record)){
+                return "EX15";
             }
 
             return "EX1";

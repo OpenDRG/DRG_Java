@@ -18,10 +18,6 @@ public class LU1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合LU1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCL_DRG.LU15_group(record)){
-                return "LU15";
-            }
-    
             if (MDCL_DRG.LU10_group(record)){
                 return "LU10";
             }
@@ -32,6 +28,10 @@ public class LU1 {
     
             if (MDCL_DRG.LU13_group(record)){
                 return "LU13";
+            }
+    
+            if (MDCL_DRG.LU15_group(record)){
+                return "LU15";
             }
 
             return "LU1";

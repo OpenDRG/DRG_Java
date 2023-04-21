@@ -9,11 +9,8 @@ import java.util.List;
 public class GroupTest {
     public static void main(String[] args) {
         GroupProxy grouper=new GroupProxy();
-        // String[] args1={"c:/yb/cz/ba_group_2023.csv","病案号,性别,年龄,新生儿年龄天,新生儿出生体重,科室,住院天数,离院方式,诊断编码,手术操作编码,医保DRG分组"};
-        // grouper.group_csv(Paths.get(args1[0]),Arrays.asList(args1[1].split(",",-1)));
         // System.out.println(grouper.group_record("22139456,1.0,51.0,18987.0,,13110006.0,10.0,2.0,\"K75.000,J98.414,R68.800x001,N19.x03,J96.900x001,K76.800x006,E14.900x001,I10.x00x002\",\"96.7201,96.0400,38.9301,38.9303,99.0800\",AH11"));
-        System.out.println(grouper.group_record("22136028,2.0,50.0,18624.0,,13030501.0,16.0,1.0,\"J98.414\",\"96.0400,38.9302,33.2403\","));
-        System.exit(0);
+        // System.exit(0);
         if (args==null||args.length==0){
             String path=System.getProperty("user.dir");
             if (!new File(path, "input.txt").exists()){

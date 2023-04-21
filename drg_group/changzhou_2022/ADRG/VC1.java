@@ -18,16 +18,16 @@ public class VC1 {
         if (true && record.ssList!=null && record.ssList.length>0 && Base.contains(adrg_ss,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合VC1入组条件，匹配规则：主手术匹配");
                 
-            if (MDCV_DRG.VC15_group(record)){
-                return "VC15";
-            }
-    
             if (MDCV_DRG.VC11_group(record)){
                 return "VC11";
             }
     
             if (MDCV_DRG.VC13_group(record)){
                 return "VC13";
+            }
+    
+            if (MDCV_DRG.VC15_group(record)){
+                return "VC15";
             }
 
             return "VC1";

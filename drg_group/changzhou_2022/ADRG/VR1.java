@@ -18,16 +18,16 @@ public class VR1 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合VR1入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCV_DRG.VR15_group(record)){
-                return "VR15";
-            }
-    
             if (MDCV_DRG.VR11_group(record)){
                 return "VR11";
             }
     
             if (MDCV_DRG.VR13_group(record)){
                 return "VR13";
+            }
+    
+            if (MDCV_DRG.VR15_group(record)){
+                return "VR15";
             }
 
             return "VR1";

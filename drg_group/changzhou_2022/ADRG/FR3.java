@@ -18,16 +18,16 @@ public class FR3 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合FR3入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCF_DRG.FR35_group(record)){
-                return "FR35";
-            }
-    
             if (MDCF_DRG.FR31_group(record)){
                 return "FR31";
             }
     
             if (MDCF_DRG.FR33_group(record)){
                 return "FR33";
+            }
+    
+            if (MDCF_DRG.FR35_group(record)){
+                return "FR35";
             }
     
             if (MDCF_DRG.FR37_group(record)){

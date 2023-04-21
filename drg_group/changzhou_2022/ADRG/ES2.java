@@ -18,10 +18,6 @@ public class ES2 {
         if (true && Base.contains(adrg_zd,record.zdList[0])){
             Base.groupMessages.putMessage(record.Index,"符合ES2入组条件，匹配规则：主诊断匹配");
                 
-            if (MDCE_DRG.ES25_group(record)){
-                return "ES25";
-            }
-    
             if (MDCE_DRG.ES20_group(record)){
                 return "ES20";
             }
@@ -32,6 +28,10 @@ public class ES2 {
     
             if (MDCE_DRG.ES23_group(record)){
                 return "ES23";
+            }
+    
+            if (MDCE_DRG.ES25_group(record)){
+                return "ES25";
             }
 
             return "ES2";
