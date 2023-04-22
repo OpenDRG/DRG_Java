@@ -65,7 +65,7 @@ public class MDCR{
             return result;
         }
 
-        if (record.ssList!=null && record.ssList.length>0  && Base.intersect(Base.SS_VALID,record.ssList)){
+        if (record.ssList!=null && record.ssList.length>0 && Base.contains(Base.SS_VALID,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合RQY入组条件，存在有效手术操作："+String.join(",",Base.Intersect(record.ssList,Base.SS_VALID)));
             return "RQY";
         }

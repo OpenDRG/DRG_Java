@@ -20,7 +20,7 @@ public class MDCU{
         Base.groupMessages.putMessage(record.Index,"符合MDCU入组条件，匹配规则：主诊断匹配");
         String result;
 
-        if (false && record.ssList!=null && record.ssList.length>0  && Base.intersect(Base.SS_VALID,record.ssList)){
+        if (false && record.ssList!=null && record.ssList.length>0 && Base.contains(Base.SS_VALID,record.ssList[0])){
             Base.groupMessages.putMessage(record.Index,"符合UQY入组条件，存在有效手术操作："+String.join(",",Base.Intersect(record.ssList,Base.SS_VALID)));
             return "UQY";
         }
