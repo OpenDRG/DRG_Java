@@ -20,6 +20,8 @@
 |drg_group/changsha_2022|长株潭衡区域版|
 |drg_group/yantai_2023|烟台版|
 |drg_group/changzhou_2022|常州版|
+|drg_group/qingdao_2023|青岛版|
+|drg_group/linfen_2022|临汾版|
 
 &emsp;&emsp;其他地区版本的分组器将逐步发布，敬请关注
 
