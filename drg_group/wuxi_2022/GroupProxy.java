@@ -28,7 +28,6 @@ public class GroupProxy {
     private static Map<String,String> ZD_MAP=read_dataFile("ICD","ZD_MAP",true);
     private static Map<String,String> SS_MAP=read_dataFile("ICD","ZD_MAP",true);
     public static Messages checkMessages=new Messages();
-    // public static Function<MedicalRecord,GroupResult> groupFunc=x->Grouper_suzhou_2022.group(x);
     private Function<MedicalRecord,GroupResult> groupFunc=x->Grouper_wuxi_2022.group(x);
     private boolean TRANS_CODE=false;
     public GroupProxy(){
