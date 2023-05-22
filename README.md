@@ -72,4 +72,4 @@ cols输入的列名需要与MedicalRecord类的属性（Index,gender,age,ageDay,
 * drg：DRG组代码，校验通过后有值，分入歧义组时为*QY，没有分到组时为00
 
 ## 联系开发团队
-请发邮件至14463966@qq.com
+请发邮件至OpenDRG@hotmail.com
