@@ -55,11 +55,6 @@ public class MDCN{
             return result;
         }
 
-        result=NG1.group(record);
-        if (result.length()>0){
-            return result;
-        }
-
         result=NJ1.group(record);
         if (result.length()>0){
             return result;

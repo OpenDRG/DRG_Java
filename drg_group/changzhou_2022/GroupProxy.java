@@ -25,8 +25,8 @@ import java.util.stream.Stream;
 public class GroupProxy {
     private static Map<String,String> ZD_INFO=read_dataFile("ICD","ZD_INFO");
     private static Map<String,String> SS_INFO=read_dataFile("ICD","SS_INFO");
-    private static Map<String,String> ZD_MAP=read_dataFile("ICD","ZD_MAP",true);
-    private static Map<String,String> SS_MAP=read_dataFile("ICD","ZD_MAP",true);
+    private static Map<String,String> ZD_MAP=read_dataFile("ICD","ZD_MAP");
+    private static Map<String,String> SS_MAP=read_dataFile("ICD","SS_MAP");
     public static Messages checkMessages=new Messages();
     private Function<MedicalRecord,GroupResult> groupFunc=x->Grouper_changzhou_2022.group(x);
     private boolean TRANS_CODE=false;
@@ -99,7 +99,7 @@ public class GroupProxy {
                 zd=ZD_MAP.get(x);
                 if (!zd.equals(x)){
                     record.zdList[i]=zd;
-                    checkMessages.putMessage(record.Index, String.format("%s->%s %s",x,zd));
+                    checkMessages.putMessage(record.Index, String.format("%s->%s",x,zd));
                 }
             }else{
                 checkMessages.putMessage(record.Index, String.format("诊断%s无法转换为分组器支持的编码",zd));
@@ -128,7 +128,7 @@ public class GroupProxy {
         DrgGroupStatus status;
         if (TRANS_CODE){
             status=trans(record);
-            if (trans(record)!=null){
+            if (status!=null){
                 return new GroupResult(status.getDesc(),checkMessages.returnMessages(record.Index),record);
             }
         }
