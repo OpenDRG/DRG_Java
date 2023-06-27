@@ -25,8 +25,8 @@ import java.util.stream.Stream;
 public class GroupProxy {
     private static Map<String,String> ZD_INFO=read_dataFile("ICD","ZD_INFO");
     private static Map<String,String> SS_INFO=read_dataFile("ICD","SS_INFO");
-    private static Map<String,String> ZD_MAP=read_dataFile("ICD","ZD_MAP",true);
-    private static Map<String,String> SS_MAP=read_dataFile("ICD","ZD_MAP",true);
+    private static Map<String,String> ZD_MAP=read_dataFile("ICD","ZD_MAP");
+    private static Map<String,String> SS_MAP=read_dataFile("ICD","SS_MAP");
     public static Messages checkMessages=new Messages();
     private Function<MedicalRecord,GroupResult> groupFunc=x->Grouper_handan_2022.group(x);
     private boolean TRANS_CODE=false;
