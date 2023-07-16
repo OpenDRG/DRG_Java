@@ -20,7 +20,12 @@ public class MDCN{
         Base.groupMessages.putMessage(record.Index,"符合MDCN入组条件，匹配规则：主诊断匹配、女性");
         String result;
 
-        result=NA1.group(record);
+        result=NA1_1.group(record);
+        if (result.length()>0){
+            return result;
+        }
+
+        result=NA1_2.group(record);
         if (result.length()>0){
             return result;
         }

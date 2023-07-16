@@ -13,7 +13,7 @@ public class MDCA{
     public static String group(MedicalRecord record){
         String[] mdc_zd={};
         String[] dept_list={};
-        if (!(true && record.ssList!=null && record.ssList.length>0 && Base.contains(Base.SS_VALID,record.ssList[0]))){
+        if (!(true && record.ssList!=null && record.ssList.length>0 && (Base.contains(Base.SS_VALID,record.ssList[0]) || Base.contains(new String[]{"96.0400","96.7201"},record.ssList[0])))){
             return "";
         }
         

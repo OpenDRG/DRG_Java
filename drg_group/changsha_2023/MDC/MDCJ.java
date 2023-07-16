@@ -20,12 +20,22 @@ public class MDCJ{
         Base.groupMessages.putMessage(record.Index,"符合MDCJ入组条件，匹配规则：主诊断匹配");
         String result;
 
-        result=JA1.group(record);
+        result=JA1_1.group(record);
         if (result.length()>0){
             return result;
         }
 
-        result=JA2.group(record);
+        result=JA1_2.group(record);
+        if (result.length()>0){
+            return result;
+        }
+
+        result=JA2_1.group(record);
+        if (result.length()>0){
+            return result;
+        }
+
+        result=JA2_2.group(record);
         if (result.length()>0){
             return result;
         }

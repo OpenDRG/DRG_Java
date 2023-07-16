@@ -67,11 +67,11 @@ public class MDCI_DRG {
         return true;
     }
 
-    public static boolean IF2A_CS_group(MedicalRecord record){
+    public static boolean IF2A_group(MedicalRecord record){
         return record.age<=6;
     }
 
-    public static boolean IF2B_CS_group(MedicalRecord record){
+    public static boolean IF2B_group(MedicalRecord record){
         return true;
     }
 

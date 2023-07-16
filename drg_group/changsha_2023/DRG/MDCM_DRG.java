@@ -19,19 +19,19 @@ public class MDCM_DRG {
         return true;
     }
 
-    public static boolean MD1A_CS_group(MedicalRecord record){
+    public static boolean MD1A_group(MedicalRecord record){
         return record.age<=6;
     }
 
-    public static boolean MJ1A_CS_group(MedicalRecord record){
+    public static boolean MJ1A_group(MedicalRecord record){
         return record.age<=6;
     }
 
-    public static boolean MD1B_CS_group(MedicalRecord record){
+    public static boolean MD1B_group(MedicalRecord record){
         return true;
     }
 
-    public static boolean MJ1B_CS_group(MedicalRecord record){
+    public static boolean MJ1B_group(MedicalRecord record){
         return true;
     }
 

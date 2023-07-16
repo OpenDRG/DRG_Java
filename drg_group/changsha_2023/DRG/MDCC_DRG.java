@@ -19,11 +19,11 @@ public class MDCC_DRG {
         return true;
     }
 
-    public static boolean CD1A_CS_group(MedicalRecord record){
+    public static boolean CD1A_group(MedicalRecord record){
         return record.age<=6;
     }
 
-    public static boolean CD1B_CS_group(MedicalRecord record){
+    public static boolean CD1B_group(MedicalRecord record){
         return true;
     }
 

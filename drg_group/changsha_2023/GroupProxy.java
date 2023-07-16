@@ -99,7 +99,7 @@ public class GroupProxy {
                 zd=ZD_MAP.get(x);
                 if (!zd.equals(x)){
                     record.zdList[i]=zd;
-                    checkMessages.putMessage(record.Index, String.format("%s->%s %s",x,zd));
+                    checkMessages.putMessage(record.Index, String.format("%s->%s",x,zd));
                 }
             }else{
                 checkMessages.putMessage(record.Index, String.format("诊断%s无法转换为分组器支持的编码",zd));
@@ -128,7 +128,7 @@ public class GroupProxy {
         DrgGroupStatus status;
         if (TRANS_CODE){
             status=trans(record);
-            if (trans(record)!=null){
+            if (status!=null){
                 return new GroupResult(status.getDesc(),checkMessages.returnMessages(record.Index),record);
             }
         }
@@ -173,7 +173,7 @@ public class GroupProxy {
         try{
             Files.write(Paths.get(filename.toString().replace(".csv", "_java_result.csv")),result,StandardCharsets.UTF_8,StandardOpenOption.CREATE_NEW);
         }catch(IOException e) {
-            System.out.println(String.format("文件写入失败%s", Paths.get(filename.toString().replace(".csv", "_result.csv"))));
+            System.out.println(String.format("文件写入失败%s", Paths.get(filename.toString().replace(".csv", "_java_result.csv"))));
             e.printStackTrace();
         }
     }

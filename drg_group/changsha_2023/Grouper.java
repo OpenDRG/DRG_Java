@@ -43,6 +43,12 @@ public class Grouper {
             return result;
         }
 
+        result=MDCO.group(record);
+        if (result.length()>0){
+            Base.groupMessages.putMessage(record.Index, "***"+result+" "+Base.DRG.get(result)+"***");
+            return result;
+        }
+
         result=MDCB.group(record);
         if (result.length()>0){
             Base.groupMessages.putMessage(record.Index, "***"+result+" "+Base.DRG.get(result)+"***");
@@ -104,12 +110,6 @@ public class Grouper {
         }
 
         result=MDCL.group(record);
-        if (result.length()>0){
-            Base.groupMessages.putMessage(record.Index, "***"+result+" "+Base.DRG.get(result)+"***");
-            return result;
-        }
-
-        result=MDCO.group(record);
         if (result.length()>0){
             Base.groupMessages.putMessage(record.Index, "***"+result+" "+Base.DRG.get(result)+"***");
             return result;

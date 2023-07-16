@@ -87,11 +87,11 @@ public class MDCF_DRG {
         return true;
     }
 
-    public static boolean FV1A_CS_group(MedicalRecord record){
+    public static boolean FV1A_group(MedicalRecord record){
         return record.age<=6;
     }
 
-    public static boolean FV1B_CS_group(MedicalRecord record){
+    public static boolean FV1B_group(MedicalRecord record){
         return true;
     }
 

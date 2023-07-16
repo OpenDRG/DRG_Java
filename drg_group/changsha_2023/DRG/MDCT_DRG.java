@@ -19,11 +19,11 @@ public class MDCT_DRG {
         return true;
     }
 
-    public static boolean TU1A_CS_group(MedicalRecord record){
+    public static boolean TU1A_group(MedicalRecord record){
         return record.age<=6;
     }
 
-    public static boolean TU1B_CS_group(MedicalRecord record){
+    public static boolean TU1B_group(MedicalRecord record){
         return true;
     }
 
