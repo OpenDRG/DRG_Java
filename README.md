@@ -69,7 +69,7 @@ cols输入的列名需要与MedicalRecord类的属性（Index,gender,age,ageDay,
 * Index：带入输入对象MedicalRecord的Index字段，建议使用病案号或住院号，保持唯一性
 * status：分组结果，“分组成功”代表分组成功，其他定义见DrgGroupStatus类
 * messages：分组过程，列表格式，包括ICD编码转换信息、名称信息，以及DRG分组每一步操作的记录，是什么结果，应用了哪些规则
-* mdc：主要诊断大类，分组成功或分入歧义组是有值
+* mdc：主要诊断大类，分组成功或分入歧义组时有值
 * adrg：核心DRG组代码，校验通过后有值，分入歧义组时为QY，没有分到组时为00
 * drg：DRG组代码，校验通过后有值，分入歧义组时为*QY，没有分到组时为00
 
