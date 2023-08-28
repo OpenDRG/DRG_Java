@@ -24,6 +24,7 @@
 |drg_group/linfen_2022|临汾版|
 |drg_group/handan_2022|邯郸版|
 |drg_group/chongqing_2022|重庆版|
+|drg_group/changchun_2022|长春版|
 
 &emsp;&emsp;其他地区版本的分组器将逐步发布，敬请关注
 
